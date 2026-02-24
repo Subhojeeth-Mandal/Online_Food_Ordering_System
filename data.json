@@ -1,0 +1,3931 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza Palace",
+    "cuisine": ["Pizza"],
+    "rating": 4.5,
+    "reviewCount": 1200,
+    "deliveryTime": "30-40 min",
+    "minOrder": 15,
+    "deliveryFee": 2.99,
+    "image": "https://tb-static.uber.com/prod/image-proc/processed_images/150a1c448aa58f94ff8304d6fda985b1/cc592037c936600295e9961933037e19.jpeg",
+    "address": "123 Main St, Downtown",
+    "menu": [
+      {
+        "category": "Popular Pizzas",
+        "items": [
+          {
+            "id": 101,
+            "name": "Margherita Pizza",
+            "description": "Premium mozzarella, fresh tomato sauce, and basil on our artisan crust.",
+            "price": 14.99,
+            "image": "https://img.freepik.com/premium-photo/pizza-margherita-wooden-background-top-view-flyer-poster-restaurants-pizzerias_120962-7.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 102,
+            "name": "Pepperoni Feast",
+            "description": "Double portion of spicy pepperoni with extra mozzarella cheese.",
+            "price": 16.99,
+            "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 103,
+            "name": "BBQ Chicken Pizza",
+            "description": "Grilled chicken, red onions, cilantro, and tangy BBQ sauce.",
+            "price": 17.99,
+            "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 104,
+            "name": "Vegetarian Supreme",
+            "description": "Bell peppers, mushrooms, onions, olives, and fresh tomatoes.",
+            "price": 15.99,
+            "image": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 105,
+            "name": "Meat Lovers",
+            "description": "Pepperoni, sausage, bacon, ham, and ground beef.",
+            "price": 19.99,
+            "image": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 106,
+            "name": "Hawaiian Paradise",
+            "description": "Canadian bacon, pineapple, and extra mozzarella.",
+            "price": 16.49,
+            "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Sides",
+        "items": [
+          {
+            "id": 107,
+            "name": "Garlic Knots",
+            "description": "Six buttery garlic knots served with marinara sauce.",
+            "price": 6.99,
+            "image": "https://media.istockphoto.com/id/133875183/photo/garlic-bread-knots.jpg?s=612x612&w=0&k=20&c=UAk1gAwNx8NKMax0EGa6FZGcmOEgtc131YbBAq4ZhEA=",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 108,
+            "name": "Buffalo Wings",
+            "description": "Eight crispy wings tossed in spicy buffalo sauce.",
+            "price": 9.99,
+            "image": "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 109,
+            "name": "Mozzarella Sticks",
+            "description": "Six golden fried mozzarella sticks with marinara dipping sauce.",
+            "price": 7.99,
+            "image": "https://images.unsplash.com/photo-1531749668029-2db88e4276c7?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 110,
+            "name": "Caesar Salad",
+            "description": "Crisp romaine, parmesan, croutons, and Caesar dressing.",
+            "price": 8.99,
+            "image": "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Desserts",
+        "items": [
+          {
+            "id": 111,
+            "name": "Tiramisu",
+            "description": "Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.",
+            "price": 6.99,
+            "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 112,
+            "name": "Chocolate Lava Cake",
+            "description": "Warm chocolate cake with a molten center, served with vanilla ice cream.",
+            "price": 7.99,
+            "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Burger Hub",
+    "cuisine": ["Burgers"],
+    "rating": 4.2,
+    "reviewCount": 850,
+    "deliveryTime": "20-30 min",
+    "minOrder": 10,
+    "deliveryFee": 1.99,
+    "image": "https://franchiseindia.s3.ap-south-1.amazonaws.com/franchisor/template/slider/0116/1110977182.jpg",
+    "address": "456 Oak Avenue, Midtown",
+    "menu": [
+      {
+        "category": "Burgers",
+        "items": [
+          {
+            "id": 201,
+            "name": "The Classic Smash",
+            "description": "Double beef patty, cheddar cheese, secret sauce, and pickles.",
+            "price": 11.99,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 202,
+            "name": "BBQ Bacon Burger",
+            "description": "Single patty with crispy bacon, onion rings, and smoky BBQ sauce.",
+            "price": 13.99,
+            "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 203,
+            "name": "Mushroom Swiss Burger",
+            "description": "Beef patty topped with sautéed mushrooms and melted Swiss cheese.",
+            "price": 12.99,
+            "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 204,
+            "name": "Veggie Burger",
+            "description": "Plant-based patty with avocado, lettuce, tomato, and special sauce.",
+            "price": 10.99,
+            "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 205,
+            "name": "Spicy Jalapeño Burger",
+            "description": "Beef patty with pepper jack cheese, jalapeños, and chipotle mayo.",
+            "price": 12.49,
+            "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Sides",
+        "items": [
+          {
+            "id": 206,
+            "name": "Classic Fries",
+            "description": "Golden crispy french fries with sea salt.",
+            "price": 3.99,
+            "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 207,
+            "name": "Sweet Potato Fries",
+            "description": "Crispy sweet potato fries with honey mustard dip.",
+            "price": 4.99,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjJxxpPvBl9zHYr41r18II57CTsz4pU1H1PQ&s",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 208,
+            "name": "Onion Rings",
+            "description": "Thick-cut onion rings with ranch dipping sauce.",
+            "price": 5.49,
+            "image": "https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 209,
+            "name": "Loaded Cheese Fries",
+            "description": "Fries topped with melted cheddar, bacon bits, and green onions.",
+            "price": 6.99,
+            "image": "https://thumbs.dreamstime.com/b/mouthwatering-plate-loaded-fries-topped-crispy-bacon-cheddar-cheese-sliced-green-onions-spicy-sauce-perfect-346119384.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Shakes",
+        "items": [
+          {
+            "id": 210,
+            "name": "Chocolate Milkshake",
+            "description": "Thick and creamy chocolate milkshake topped with whipped cream.",
+            "price": 5.99,
+            "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 211,
+            "name": "Strawberry Shake",
+            "description": "Fresh strawberry milkshake with real fruit.",
+            "price": 5.99,
+            "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 212,
+            "name": "Oreo Shake",
+            "description": "Vanilla shake blended with Oreo cookies.",
+            "price": 6.49,
+            "image": "https://img.freepik.com/free-photo/ice-cream-with-cookie-table_140725-9225.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sushi Station",
+    "cuisine": ["Sushi"],
+    "rating": 4.8,
+    "reviewCount": 2100,
+    "deliveryTime": "40-55 min",
+    "minOrder": 25,
+    "deliveryFee": 4.99,
+    "image": "https://cebutrip.net/files/2be6ef2f308d4e43c9b3ffdc38be8e57.jpg",
+    "address": "789 Pine Lane, East Side",
+    "menu": [
+      {
+        "category": "Sushi Rolls",
+        "items": [
+          {
+            "id": 301,
+            "name": "Dragon Roll",
+            "description": "Shrimp tempura and cucumber topped with avocado and unagi sauce.",
+            "price": 15.49,
+            "image": "https://images.unsplash.com/photo-1617196034183-421b4917c92d?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 302,
+            "name": "California Roll",
+            "description": "Crab, avocado, and cucumber wrapped in seaweed and rice.",
+            "price": 9.99,
+            "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 303,
+            "name": "Spicy Tuna Roll",
+            "description": "Fresh tuna with spicy mayo and cucumber.",
+            "price": 12.99,
+            "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 304,
+            "name": "Rainbow Roll",
+            "description": "California roll topped with assorted sashimi and avocado.",
+            "price": 16.99,
+            "image": "https://png.pngtree.com/thumb_back/fh260/background/20260106/pngtree-colorful-rainbow-cake-roll-slices-on-white-plate-image_21016323.webp",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 305,
+            "name": "Vegetable Tempura Roll",
+            "description": "Assorted tempura vegetables with avocado and sweet sauce.",
+            "price": 10.99,
+            "image": "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 306,
+            "name": "Philadelphia Roll",
+            "description": "Smoked salmon, cream cheese, and cucumber.",
+            "price": 11.99,
+            "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Nigiri",
+        "items": [
+          {
+            "id": 307,
+            "name": "Salmon Nigiri (2pc)",
+            "description": "Fresh salmon over seasoned rice.",
+            "price": 6.99,
+            "image": "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 308,
+            "name": "Tuna Nigiri (2pc)",
+            "description": "Premium tuna over seasoned rice.",
+            "price": 7.99,
+            "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 309,
+            "name": "Shrimp Nigiri (2pc)",
+            "description": "Cooked shrimp over seasoned rice.",
+            "price": 5.99,
+            "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Appetizers",
+        "items": [
+          {
+            "id": 310,
+            "name": "Edamame",
+            "description": "Steamed soybeans with sea salt.",
+            "price": 4.99,
+            "image": "https://static.vecteezy.com/system/resources/thumbnails/047/573/106/small/steamed-edamame-sprinkled-with-sea-salt-and-served-with-a-side-of-brown-rice-photo.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 311,
+            "name": "Gyoza (6pc)",
+            "description": "Pan-fried pork dumplings with dipping sauce.",
+            "price": 7.99,
+            "image": "https://static.vecteezy.com/system/resources/previews/066/573/101/non_2x/fried-gyoza-dumplings-served-on-wooden-board-with-soy-sauce-and-chopsticks-photo.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 312,
+            "name": "Miso Soup",
+            "description": "Traditional Japanese soup with tofu and seaweed.",
+            "price": 3.99,
+            "image": "https://thewillowskitchen.com/wp-content/uploads/2023/05/tofu-wakame-miso-soup-1.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Curry Corner",
+    "cuisine": ["Curry"],
+    "rating": 4.6,
+    "reviewCount": 940,
+    "deliveryTime": "35-50 min",
+    "minOrder": 15,
+    "deliveryFee": 2.50,
+    "image": "https://t4.ftcdn.net/jpg/02/42/74/31/360_F_242743136_RYsBnwSL1Tfs1UsPUFXGrsPp1nPXe8nv.jpg",
+    "address": "321 Spice Rd, West Valley",
+    "menu": [
+      {
+        "category": "Main Course",
+        "items": [
+          {
+            "id": 401,
+            "name": "Butter Chicken",
+            "description": "Tender chicken in a creamy tomato-based sauce with authentic spices.",
+            "price": 17.50,
+            "image": "https://www.chompslurrpburp.com/wp-content/uploads/2022/10/cover-1.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 402,
+            "name": "Chicken Tikka Masala",
+            "description": "Marinated chicken in a rich and creamy curry sauce.",
+            "price": 16.99,
+            "image": "https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Tikka-Masala-min-600x600.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 403,
+            "name": "Lamb Vindaloo",
+            "description": "Spicy lamb curry with potatoes in a tangy sauce.",
+            "price": 19.99,
+            "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/11/lamb-vindaloo-recipe.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 404,
+            "name": "Palak Paneer",
+            "description": "Homemade cheese cubes in creamy spinach curry.",
+            "price": 14.99,
+            "image": "https://priyafoods.com/cdn/shop/files/PALAKPANEER_2.jpg?v=1701948057&width=1780",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 405,
+            "name": "Chana Masala",
+            "description": "Chickpeas cooked in aromatic tomato and onion curry.",
+            "price": 13.99,
+            "image": "https://vegecravings.com/wp-content/uploads/2017/01/chole-recipe-step-by-step-instructions-13.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Breads",
+        "items": [
+          {
+            "id": 406,
+            "name": "Garlic Naan",
+            "description": "Fresh-baked flatbread with garlic and butter.",
+            "price": 3.99,
+            "image": "https://t4.ftcdn.net/jpg/17/15/16/93/360_F_1715169355_cAjyCT1V26tJbHqmlqqXT8rKNgRvFiHk.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 407,
+            "name": "Plain Naan",
+            "description": "Traditional soft and fluffy flatbread.",
+            "price": 2.99,
+            "image": "https://media.istockphoto.com/id/1150376593/photo/bread-tandoori-indian-cuisine.jpg?s=612x612&w=0&k=20&c=GGT5LN7G4zLhJTEnP_KcyvYuayi8f1nJcvQwvmj0rCM=",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 408,
+            "name": "Cheese Naan",
+            "description": "Naan stuffed with melted cheese.",
+            "price": 4.99,
+            "image": "https://t3.ftcdn.net/jpg/08/95/50/04/360_F_895500474_IDUMxbOGEBn29tyPyjG8oLEEWlK8ZlOg.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Rice & Biryani",
+        "items": [
+          {
+            "id": 409,
+            "name": "Chicken Biryani",
+            "description": "Fragrant basmati rice with spiced chicken and saffron.",
+            "price": 15.99,
+            "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 410,
+            "name": "Vegetable Biryani",
+            "description": "Aromatic rice with mixed vegetables and spices.",
+            "price": 13.99,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDiMiok2ektyhL9ZFNhPX3psPNJKIaVY3Ng&s",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 411,
+            "name": "Basmati Rice Biryani",
+            "description": "Steamed long-grain basmati rice.",
+            "price": 3.99,
+            "image": "https://media.istockphoto.com/id/179085494/photo/indian-biryani.jpg?s=612x612&w=0&k=20&c=VJAUfiuavFYB7PXwisvUhLqWFJ20-9m087-czUJp9Fs=",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Appetizers",
+        "items": [
+          {
+            "id": 412,
+            "name": "Samosas (2pc)",
+            "description": "Crispy pastry filled with spiced potatoes and peas.",
+            "price": 5.99,
+            "image": "https://www.aamchimumbai.co.uk/files/samosa.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 413,
+            "name": "Pakoras",
+            "description": "Mixed vegetable fritters with mint chutney.",
+            "price": 6.99,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVijqieTBHwifWTTM7ySPQbUt3Fm7WmJwxFw&s",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Taco Town",
+    "cuisine": ["Tacos"],
+    "rating": 4.4,
+    "reviewCount": 720,
+    "deliveryTime": "25-35 min",
+    "minOrder": 12,
+    "deliveryFee": 1.50,
+    "image": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_1200,q_auto,fl_lossy,dpr_auto,c_fill,f_auto,h_800,g_center/mkn3ruqsar2nefdrqdks",
+    "address": "654 Fiesta St, South End",
+    "menu": [
+      {
+        "category": "Tacos",
+        "items": [
+          {
+            "id": 501,
+            "name": "Street Taco Trio",
+            "description": "Three soft corn tortillas with choice of Carnitas, Asada, or Pollo.",
+            "price": 10.99,
+            "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 502,
+            "name": "Baja Fish Tacos",
+            "description": "Beer-battered fish with cabbage slaw and chipotle mayo.",
+            "price": 12.99,
+            "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 503,
+            "name": "Veggie Tacos",
+            "description": "Grilled vegetables with black beans, guacamole, and salsa.",
+            "price": 9.99,
+            "image": "https://png.pngtree.com/background/20250612/original/pngtree-veggie-taco-filled-with-grilled-vegetables-black-beans-avocado-and-salsa-picture-image_16651439.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 504,
+            "name": "Shrimp Tacos",
+            "description": "Grilled shrimp with mango salsa and cilantro lime crema.",
+            "price": 13.99,
+            "image": "https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Burritos",
+        "items": [
+          {
+            "id": 505,
+            "name": "California Burrito",
+            "description": "Carne asada, fries, cheese, sour cream, and guacamole.",
+            "price": 11.99,
+            "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 506,
+            "name": "Chicken Burrito",
+            "description": "Grilled chicken, rice, beans, cheese, and pico de gallo.",
+            "price": 10.99,
+            "image": "https://images.unsplash.com/photo-1566740933430-b5e70b06d2d5?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 507,
+            "name": "Bean & Cheese Burrito",
+            "description": "Refried beans and melted cheese in a flour tortilla.",
+            "price": 7.99,
+            "image": "https://delrealfoods.com/cdn/shop/articles/Bean_Cheese_Burrito.webp?v=1748323248&width=1100",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Sides",
+        "items": [
+          {
+            "id": 508,
+            "name": "Chips & Guacamole",
+            "description": "Fresh tortilla chips with homemade guacamole.",
+            "price": 6.99,
+            "image": "https://media.istockphoto.com/id/935958112/photo/guacamole-avocado-lime-tomato-onion-and-cilantro-served-with-nachos-traditional-mexican-snack.jpg?s=612x612&w=0&k=20&c=JcqMyZAsVSxhVWrpUGmftCRSekXWN6QNv--Svzto030=",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 509,
+            "name": "Chips & Salsa",
+            "description": "Crispy tortilla chips with house-made salsa.",
+            "price": 4.99,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3fC0fq-9Z1pQtkssp9FOQ1x0UiNmY-Vv5aw&s",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 510,
+            "name": "Elote (Mexican Street Corn)",
+            "description": "Grilled corn with mayo, cheese, chili powder, and lime.",
+            "price": 5.99,
+            "image": "https://www.spendwithpennies.com/wp-content/uploads/2025/06/Mexican-Street-Corn-SpendWithPennies-4-500x500.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 511,
+            "name": "Rice & Beans",
+            "description": "Mexican rice with refried beans.",
+            "price": 4.99,
+            "image": "https://www.allrecipes.com/thmb/81j6KlbHoHv-R7e1-s3vUB-JMak=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7989559-4b139ba34ab34cbb926073511f30d88f.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Quesadillas",
+        "items": [
+          {
+            "id": 512,
+            "name": "Cheese Quesadilla",
+            "description": "Flour tortilla with melted cheese blend.",
+            "price": 7.99,
+            "image": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 513,
+            "name": "Chicken Quesadilla",
+            "description": "Grilled chicken and cheese with peppers and onions.",
+            "price": 10.99,
+            "image": "https://www.shutterstock.com/image-photo/chicken-quesadilla-fresh-vegetables-on-600nw-2716859741.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Pasta Pronto",
+    "cuisine": ["Pasta"],
+    "rating": 4.3,
+    "reviewCount": 450,
+    "deliveryTime": "30-45 min",
+    "minOrder": 20,
+    "deliveryFee": 3.00,
+    "image": "https://b.zmtcdn.com/data/dish_photos/9ee/46e05396d477b4a35310041a89b799ee.jpeg",
+    "address": "222 Noodle Dr, Uptown",
+    "menu": [
+      {
+        "category": "Pastas",
+        "items": [
+          {
+            "id": 601,
+            "name": "Truffle Fettuccine",
+            "description": "Noodles with a creamy parmesan and black truffle sauce.",
+            "price": 18.99,
+            "image": "https://dinnerthendessert.com/wp-content/uploads/2023/07/Truffle-Pasta-17.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 602,
+            "name": "Spaghetti Carbonara",
+            "description": "Classic Roman pasta with pancetta, eggs, and pecorino cheese.",
+            "price": 16.99,
+            "image": "https://assets.epicurious.com/photos/555cf3d4100d9bda6d82176e/master/pass/51221420_carbonara-em-guanciale-egg_6x4.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 603,
+            "name": "Penne Arrabbiata",
+            "description": "Spicy tomato sauce with garlic and red chili flakes.",
+            "price": 14.99,
+            "image": "https://theplantbasedschool.com/wp-content/uploads/2024/01/Penne-Arrabbiata-22.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 604,
+            "name": "Seafood Linguine",
+            "description": "Shrimp, mussels, and calamari in white wine garlic sauce.",
+            "price": 21.99,
+            "image": "https://assets.bonappetit.com/photos/5a2826911a178d3636ce8fdf/1:1/w_3230,h_3230,c_limit/seafood-spaghetti-with-mussels-and-shrimp.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 605,
+            "name": "Lasagna Bolognese",
+            "description": "Layers of pasta with meat sauce, ricotta, and mozzarella.",
+            "price": 17.99,
+            "image": "https://cookingitalians.com/wp-content/uploads/2024/11/Lasagna-alla-Bolognese.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 606,
+            "name": "Mushroom Ravioli",
+            "description": "Handmade ravioli filled with wild mushrooms in cream sauce.",
+            "price": 16.99,
+            "image": "https://images.unsplash.com/photo-1587740908075-9e245070dfaa?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Appetizers",
+        "items": [
+          {
+            "id": 607,
+            "name": "Bruschetta",
+            "description": "Toasted bread with tomatoes, basil, garlic, and olive oil.",
+            "price": 7.99,
+            "image": "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 608,
+            "name": "Caprese Salad",
+            "description": "Fresh mozzarella, tomatoes, and basil with balsamic glaze.",
+            "price": 9.99,
+            "image": "https://natashasfoodadventures.com/wp-content/uploads/2023/02/caprese-salad-with-cherry-tomatoes-thumbnail.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 609,
+            "name": "Fried Calamari",
+            "description": "Crispy squid rings with marinara sauce.",
+            "price": 11.99,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkWrlzcppNBN6IfX7V4wVlKBm8z_HVba_jAQ&s",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Salads",
+        "items": [
+          {
+            "id": 610,
+            "name": "Caesar Salad",
+            "description": "Romaine lettuce, croutons, parmesan, and Caesar dressing.",
+            "price": 8.99,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9DkpA82i-Xk7Wm04lQbRKShovVqbO9nBFMQ&s",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 611,
+            "name": "Italian House Salad",
+            "description": "Mixed greens, olives, tomatoes, and Italian dressing.",
+            "price": 7.99,
+            "image": "https://www.foodandwine.com/thmb/IuZPWAXBp4YaT9hn1YLHhuijT3k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-recipes-big-italian-salad-hero-83e6ea846722478f8feb1eea33158b00.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Green Bowl",
+    "cuisine": ["Healthy"],
+    "rating": 4.7,
+    "reviewCount": 610,
+    "deliveryTime": "15-25 min",
+    "minOrder": 10,
+    "deliveryFee": 0.99,
+    "image": "https://b.zmtcdn.com/data/pictures/0/21694840/e77defcfae2d5938ca2146fe8db234b8.jpg?fit=around|960:500&crop=960:500;*,*",
+    "address": "888 Wellness Blvd, North Point",
+    "menu": [
+      {
+        "category": "Bowls",
+        "items": [
+          {
+            "id": 701,
+            "name": "Quinoa Power Bowl",
+            "description": "Spinach, quinoa, chickpeas, roasted sweet potato, and tahini dressing.",
+            "price": 12.50,
+            "image": "https://www.thegardengrazer.com/wp-content/uploads/2025/02/sweet-potato-quinoa-bowl-75-500x375.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 702,
+            "name": "Buddha Bowl",
+            "description": "Brown rice, avocado, edamame, carrots, and ginger miso dressing.",
+            "price": 11.99,
+            "image": "https://lovefoodnourish.com/wp-content/uploads/2021/08/Asian-Buddha-Bowl-Feature-720x540.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 703,
+            "name": "Grilled Chicken Bowl",
+            "description": "Grilled chicken, kale, quinoa, cherry tomatoes, and lemon vinaigrette.",
+            "price": 13.99,
+            "image": "https://mealpractice.b-cdn.net/90248776253575168/mediterranean-grilled-chicken-with-lemon-herb-quinoa-salad-bo8CNnZquO.webp",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 704,
+            "name": "Salmon Poke Bowl",
+            "description": "Fresh salmon, edamame, cucumber, seaweed, and soy ginger sauce.",
+            "price": 15.99,
+            "image": "https://dishnthekitchen.com/wp-content/uploads/2025/01/squareSalmonPoke-735x735.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 705,
+            "name": "Mediterranean Bowl",
+            "description": "Falafel, hummus, tabbouleh, cucumber, and tahini sauce.",
+            "price": 12.99,
+            "image": "https://ranasrecipe.com/wp-content/uploads/2024/01/Photo-Jun-06-2023-2-40-32-AM-1-2-1.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Salads",
+        "items": [
+          {
+            "id": 706,
+            "name": "Kale Caesar Salad",
+            "description": "Massaged kale, parmesan, croutons, and Caesar dressing.",
+            "price": 10.99,
+            "image": "https://easyweeknightrecipes.com/wp-content/uploads/2025/05/kale-caesar-salad-recipe-2-500x500.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 707,
+            "name": "Greek Salad",
+            "description": "Cucumbers, tomatoes, olives, feta cheese, and Greek dressing.",
+            "price": 9.99,
+            "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 708,
+            "name": "Protein Power Salad",
+            "description": "Grilled chicken, hard-boiled egg, avocado, mixed greens, and ranch.",
+            "price": 12.99,
+            "image": "https://data.thefeedfeed.com/static/2020/10/24/16035886455f94d225a77ce.png",
+            "isVegetarian": false,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Smoothies",
+        "items": [
+          {
+            "id": 709,
+            "name": "Green Goddess",
+            "description": "Spinach, banana, mango, and coconut water.",
+            "price": 7.99,
+            "image": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 710,
+            "name": "Berry Blast",
+            "description": "Mixed berries, banana, Greek yogurt, and honey.",
+            "price": 7.99,
+            "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 711,
+            "name": "Tropical Paradise",
+            "description": "Pineapple, mango, passion fruit, and orange juice.",
+            "price": 8.49,
+            "image": "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 712,
+            "name": "Protein Shake",
+            "description": "Banana, peanut butter, protein powder, and almond milk.",
+            "price": 9.99,
+            "image": "https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Wraps",
+        "items": [
+          {
+            "id": 713,
+            "name": "Chicken Wrap",
+            "description": "Grilled chicken, lettuce, tomato, and honey mustard in a whole wheat wrap.",
+            "price": 9.99,
+            "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 714,
+            "name": "Veggie Hummus Wrap",
+            "description": "Hummus, cucumber, carrots, spinach, and feta in a spinach wrap.",
+            "price": 8.99,
+            "image": "https://www.healthyseasonalrecipes.com/wp-content/uploads/2022/08/easy-spinach-wraps-with-hummus-and-veggies-sq-0809.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Sweet Treats",
+    "cuisine": ["Bakery", "Desserts"],
+    "rating": 4.9,
+    "reviewCount": 1800,
+    "deliveryTime": "20-30 min",
+    "minOrder": 15,
+    "deliveryFee": 2.99,
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
+    "address": "100 Sugar St, Old Town",
+    "menu": [
+      {
+        "category": "Cakes",
+        "items": [
+          {
+            "id": 801,
+            "name": "Red Velvet Sensation",
+            "description": "Moist red velvet cake with thick cream cheese frosting.",
+            "price": 6.50,
+            "image": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 802,
+            "name": "Chocolate Fudge Cake",
+            "description": "Rich chocolate cake with creamy fudge frosting.",
+            "price": 6.99,
+            "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 803,
+            "name": "Carrot Cake",
+            "description": "Spiced carrot cake with walnuts and cream cheese frosting.",
+            "price": 5.99,
+            "image": "https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 804,
+            "name": "Vanilla Bean Cake",
+            "description": "Light vanilla cake with buttercream frosting.",
+            "price": 5.50,
+            "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Cupcakes",
+        "items": [
+          {
+            "id": 805,
+            "name": "Chocolate Cupcake",
+            "description": "Rich chocolate cupcake with chocolate ganache.",
+            "price": 3.99,
+            "image": "https://www.dessarts.com/wp-content/uploads/2023/07/Chocolate-Ganache-Cupcakes_1200px_F-720x720.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 806,
+            "name": "Vanilla Cupcake",
+            "description": "Classic vanilla cupcake with vanilla buttercream.",
+            "price": 3.49,
+            "image": "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 807,
+            "name": "Red Velvet Cupcake",
+            "description": "Mini red velvet cake with cream cheese frosting.",
+            "price": 4.49,
+            "image": "https://thestushkitchen.com/wp-content/uploads/2025/04/red-velvet-cupcakes-768x1117.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 808,
+            "name": "Lemon Cupcake",
+            "description": "Zesty lemon cupcake with lemon buttercream.",
+            "price": 3.99,
+            "image": "https://images.unsplash.com/photo-1599785209796-786432b228bc?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Cookies",
+        "items": [
+          {
+            "id": 809,
+            "name": "Chocolate Chip Cookies (6pc)",
+            "description": "Classic chocolate chip cookies, soft and chewy.",
+            "price": 7.99,
+            "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 810,
+            "name": "Double Chocolate Cookies (6pc)",
+            "description": "Fudgy chocolate cookies with chocolate chips.",
+            "price": 8.49,
+            "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 811,
+            "name": "Oatmeal Raisin Cookies (6pc)",
+            "description": "Classic oatmeal cookies with plump raisins.",
+            "price": 6.99,
+            "image": "https://moversandbakers.co.uk/wp-content/uploads/2024/04/Oatmeal-Raisin-Cookies_2319.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Pastries",
+        "items": [
+          {
+            "id": 812,
+            "name": "Croissant",
+            "description": "Buttery, flaky French croissant.",
+            "price": 3.99,
+            "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 813,
+            "name": "Chocolate Croissant",
+            "description": "Flaky croissant filled with rich chocolate.",
+            "price": 4.49,
+            "image": "https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 814,
+            "name": "Cinnamon Roll",
+            "description": "Soft cinnamon roll with cream cheese icing.",
+            "price": 4.99,
+            "image": "https://cookingwithcurls.com/wp-content/uploads/2017/11/Two-cinnamon-rolls-topped-with-cream-cheese-icing-on-small-plates.-cookingwithcurls.com-recipe-360x360.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 815,
+            "name": "Apple Turnover",
+            "description": "Flaky pastry filled with spiced apples.",
+            "price": 3.99,
+            "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 816,
+            "name": "Blueberry Muffin",
+            "description": "Moist muffin loaded with fresh blueberries.",
+            "price": 3.49,
+            "image": "https://images.unsplash.com/photo-1607478900766-efe13248b125?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Specialty",
+        "items": [
+          {
+            "id": 817,
+            "name": "New York Cheesecake",
+            "description": "Classic creamy cheesecake with graham cracker crust.",
+            "price": 6.99,
+            "image": "https://www.inspiredtaste.net/wp-content/uploads/2024/03/New-York-Cheesecake-Recipe-2.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 818,
+            "name": "Strawberry Shortcake",
+            "description": "Light sponge cake with fresh strawberries and whipped cream.",
+            "price": 5.99,
+            "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 819,
+            "name": "Tiramisu",
+            "description": "Italian coffee-flavored dessert with mascarpone.",
+            "price": 6.49,
+            "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 820,
+            "name": "Brownie",
+            "description": "Fudgy chocolate brownie with walnuts.",
+            "price": 4.49,
+            "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+  "id": 9,
+  "name": "Dragon Wok",
+  "cuisine": ["Chinese", "Asian"],
+  "rating": 4.3,
+  "reviewCount": 980,
+  "deliveryTime": "30-45 min",
+  "minOrder": 15,
+  "deliveryFee": 2.49,
+  "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
+  "address": "55 Lotus Avenue, City Center",
+  "menu": [
+    {
+      "category": "Main Course",
+      "items": [
+        {
+          "id": 901,
+          "name": "Kung Pao Chicken",
+          "description": "Spicy stir-fried chicken with peanuts and vegetables.",
+          "price": 14.99,
+          "image": "https://xoxobella.com/wp-content/uploads/2025/01/kung-pao-chicken-featured.jpg",
+          "isVegetarian": false,
+          "bestseller": true
+        },
+        {
+          "id": 902,
+          "name": "Veg Manchurian",
+          "description": "Fried vegetable balls tossed in tangy sauce.",
+          "price": 11.99,
+          "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/veg-manchurian.webp",
+          "isVegetarian": true,
+          "bestseller": true
+        }
+      ]
+    },
+    {
+      "category": "Noodles & Rice",
+      "items": [
+        {
+          "id": 903,
+          "name": "Hakka Noodles",
+          "description": "Classic wok-tossed noodles with vegetables.",
+          "price": 10.99,
+          "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/hakka-noodles-recipe.jpg",
+          "isVegetarian": true,
+          "bestseller": false
+        },
+        {
+          "id": 904,
+          "name": "Fried Rice",
+          "description": "Steamed rice stir-fried with soy sauce and veggies.",
+          "price": 9.99,
+          "image": "https://www.indianveggiedelight.com/wp-content/uploads/2023/01/veg-fried-rice.jpg",
+          "isVegetarian": true,
+          "bestseller": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": 10,
+  "name": "Brewed Bliss",
+  "cuisine": ["Cafe", "Coffee"],
+  "rating": 4.6,
+  "reviewCount": 670,
+  "deliveryTime": "15-25 min",
+  "minOrder": 8,
+  "deliveryFee": 0.99,
+  "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+  "address": "22 Aroma Street, Central Park",
+  "menu": [
+    {
+      "category": "Coffee",
+      "items": [
+        {
+          "id": 1001,
+          "name": "Cappuccino",
+          "description": "Rich espresso with steamed milk foam.",
+          "price": 4.99,
+          "image": "https://staresso.com/cdn/shop/articles/difference_between_espresso_and_cappuccino.png?crop=center&height=2048&v=1721125844&width=2048",
+          "isVegetarian": true,
+          "bestseller": true
+        },
+        {
+          "id": 1002,
+          "name": "Iced Latte",
+          "description": "Chilled espresso with milk and ice.",
+          "price": 5.49,
+          "image": "https://thumbs.dreamstime.com/b/iced-latte-coffee-milk-ice-cubes-isolated-white-background-refreshing-made-espresso-cold-served-transparent-434794350.jpg",
+          "isVegetarian": true,
+          "bestseller": false
+        }
+      ]
+    },
+    {
+      "category": "Snacks",
+      "items": [
+        {
+          "id": 1003,
+          "name": "Chocolate Brownie",
+          "description": "Dense chocolate brownie with nuts.",
+          "price": 3.99,
+          "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80",
+          "isVegetarian": true,
+          "bestseller": true
+        },
+        {
+          "id": 1004,
+          "name": "Cheese Sandwich",
+          "description": "Grilled sandwich with melted cheese.",
+          "price": 4.49,
+          "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=400&q=80",
+          "isVegetarian": true,
+          "bestseller": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": 11,
+  "name": "Sweet Slice",
+  "cuisine": ["Bakery", "Cakes"],
+  "rating": 4.7,
+  "reviewCount": 1240,
+  "deliveryTime": "20-30 min",
+  "minOrder": 10,
+  "deliveryFee": 1.49,
+  "image": "https://w0.peakpx.com/wallpaper/269/609/HD-wallpaper-texture-donut-pattern-bakery-cake-sweets-chocolate-paper-thumbnail.jpg",
+  "address": "18 Baker Street, Downtown",
+  "menu": [
+    {
+      "category": "Cakes",
+      "items": [
+        {
+          "id": 1101,
+          "name": "Chocolate Truffle Cake",
+          "description": "Rich chocolate cake layered with ganache.",
+          "price": 18.99,
+          "image": "https://ofbatteranddough.com/wp-content/uploads/2023/01/1200s-Chocolate-truffle-cake-2.jpg",
+          "isVegetarian": true,
+          "bestseller": true
+        },
+        {
+          "id": 1102,
+          "name": "Red Velvet Cake",
+          "description": "Soft red velvet cake with cream cheese frosting.",
+          "price": 17.49,
+          "image": "https://t3.ftcdn.net/jpg/02/64/84/68/360_F_264846889_3FTwwhQItDUy95Wdeaf8Qg4YLiiLNvrG.jpg",
+          "isVegetarian": true,
+          "bestseller": false
+        }
+      ]
+    },
+    {
+      "category": "Pastries",
+      "items": [
+        {
+          "id": 1103,
+          "name": "Blueberry Cheesecake",
+          "description": "Creamy cheesecake topped with blueberries.",
+          "price": 6.99,
+          "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=400&q=80",
+          "isVegetarian": true,
+          "bestseller": true
+        },
+        {
+          "id": 1104,
+          "name": "Chocolate Éclair",
+          "description": "Choux pastry filled with chocolate cream.",
+          "price": 4.99,
+          "image": "https://www.browneyedbaker.com/wp-content/uploads/2021/04/eclairs-10-1200.jpg",
+          "isVegetarian": true,
+          "bestseller": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": 12,
+  "name": "Frosty Scoop",
+  "cuisine": ["Ice-Cream", "Desserts"],
+  "rating": 4.5,
+  "reviewCount": 860,
+  "deliveryTime": "15-25 min",
+  "minOrder": 7,
+  "deliveryFee": 0.99,
+  "image": "https://media.istockphoto.com/id/936205852/photo/chocolate-ice-cream-in-a-glass-cup.jpg?s=612x612&w=0&k=20&c=gcPTroDVPNSlCS45BkqEG-6-REnKFEzboBpuX8O3lY4=",
+  "address": "9 Chill Avenue, Market Road",
+  "menu": [
+    {
+      "category": "Ice Creams",
+      "items": [
+        {
+          "id": 1201,
+          "name": "Belgian Chocolate",
+          "description": "Creamy chocolate ice cream made with Belgian cocoa.",
+          "price": 5.99,
+          "image": "https://img.freepik.com/premium-photo/double-chocolate-ice-creams-with-black-waffle-cones-dark-background_198067-538398.jpg?w=360",
+          "isVegetarian": true,
+          "bestseller": true
+        },
+        {
+          "id": 1202,
+          "name": "Vanilla Bean",
+          "description": "Classic vanilla ice cream with real vanilla beans.",
+          "price": 4.99,
+          "image": "https://sugarpursuit.com/wp-content/uploads/2023/05/Vanilla-bean-ice-cream.jpg",
+          "isVegetarian": true,
+          "bestseller": false
+        }
+      ]
+    },
+    {
+      "category": "Sundaes",
+      "items": [
+        {
+          "id": 1203,
+          "name": "Brownie Sundae",
+          "description": "Chocolate brownie topped with vanilla ice cream.",
+          "price": 7.49,
+          "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=400&q=80",
+          "isVegetarian": true,
+          "bestseller": true
+        },
+        {
+          "id": 1204,
+          "name": "Strawberry Delight",
+          "description": "Strawberry ice cream with fresh strawberry sauce.",
+          "price": 6.99,
+          "image": "https://images.stockcake.com/public/1/2/e/12e982aa-a727-4837-84ee-2183846c8b16/decadent-dessert-delight-stockcake.jpg",
+          "isVegetarian": true,
+          "bestseller": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": 13,
+  "name": "Sugar Rush",
+  "cuisine": ["Desserts", "Cafe"],
+  "rating": 4.4,
+  "reviewCount": 540,
+  "deliveryTime": "20-35 min",
+  "minOrder": 9,
+  "deliveryFee": 1.29,
+  "image": "https://thebrownmag.com/wp-content/uploads/2020/01/macron-st-augustine.jpg",
+  "address": "30 Sweet Lane, City Square",
+  "menu": [
+    {
+      "category": "Waffles",
+      "items": [
+        {
+          "id": 1301,
+          "name": "Nutella Waffle",
+          "description": "Crispy waffle topped with Nutella and nuts.",
+          "price": 8.99,
+          "image": "https://gimmethatflavor.com/wp-content/uploads/2022/10/Nutella-Waffles-Square.jpg",
+          "isVegetarian": true,
+          "bestseller": true
+        },
+        {
+          "id": 1302,
+          "name": "Classic Butter Waffle",
+          "description": "Golden waffle with butter and syrup.",
+          "price": 6.49,
+          "image": "https://thumbs.dreamstime.com/b/waffles-syrup-butter-19908513.jpg",
+          "isVegetarian": true,
+          "bestseller": false
+        }
+      ]
+    },
+    {
+      "category": "Milkshakes",
+      "items": [
+        {
+          "id": 1303,
+          "name": "Oreo Milkshake",
+          "description": "Thick milkshake blended with Oreo cookies.",
+          "price": 5.99,
+          "image": "https://img.freepik.com/free-photo/ice-cream-with-cookie-table_140725-9225.jpg?semt=ais_user_personalization&w=740&q=80",
+          "isVegetarian": true,
+          "bestseller": true
+        },
+        {
+          "id": 1304,
+          "name": "Mango Milkshake",
+          "description": "Refreshing mango milkshake.",
+          "price": 5.49,
+          "image": "https://www.amulcafe.in/wp-content/uploads/2024/03/Mango-Milkshake.webp",
+          "isVegetarian": true,
+          "bestseller": false
+        }
+      ]
+    }
+  ]
+},
+  {
+    "id": 14,
+    "name": "Urban Slice",
+    "cuisine": ["Pizza"],
+    "rating": 4.6,
+    "reviewCount": 1420,
+    "deliveryTime": "30-40 min",
+    "minOrder": 15,
+    "deliveryFee": 2.99,
+    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b1946d35673337.570e838b0c3a7.jpg",
+    "address": "21 Market Street, Downtown",
+    "menu": [
+      {
+        "category": "Popular Pizzas",
+        "items": [
+          {
+            "id": 1401,
+            "name": "Classic Margherita",
+            "description": "Fresh mozzarella, basil, and house tomato sauce.",
+            "price": 13.99,
+            "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 1402,
+            "name": "Spicy Pepperoni",
+            "description": "Loaded pepperoni with extra cheese and chili flakes.",
+            "price": 16.99,
+            "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Sides",
+        "items": [
+          {
+            "id": 1403,
+            "name": "Garlic Bread",
+            "description": "Toasted bread with garlic butter.",
+            "price": 5.99,
+            "image": "https://media.istockphoto.com/id/547046390/photo/garlic-bread.jpg?s=612x612&w=0&k=20&c=oArNgkbjjPKlToDnBhL7xNwU4_eJLPTaLbAlIuunHDY=",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Desserts",
+        "items": [
+          {
+            "id": 1404,
+            "name": "Chocolate Brownie",
+            "description": "Rich chocolate brownie served warm.",
+            "price": 6.49,
+            "image": "https://www.shutterstock.com/image-photo/rich-brownie-topped-scoop-vanilla-600nw-2627792239.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Stacked Burgers",
+    "cuisine": ["Burgers"],
+    "rating": 4.4,
+    "reviewCount": 970,
+    "deliveryTime": "20-30 min",
+    "minOrder": 10,
+    "deliveryFee": 1.99,
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+    "address": "55 Oak Road, Midtown",
+    "menu": [
+      {
+        "category": "Burgers",
+        "items": [
+          {
+            "id": 1501,
+            "name": "Classic Beef Burger",
+            "description": "Juicy beef patty with cheddar and house sauce.",
+            "price": 11.99,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 1502,
+            "name": "Veg Supreme Burger",
+            "description": "Crispy veg patty with lettuce and mayo.",
+            "price": 9.99,
+            "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Sides",
+        "items": [
+          {
+            "id": 1503,
+            "name": "French Fries",
+            "description": "Crispy salted fries.",
+            "price": 3.99,
+            "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Shakes",
+        "items": [
+          {
+            "id": 1504,
+            "name": "Vanilla Shake",
+            "description": "Classic creamy vanilla milkshake.",
+            "price": 5.49,
+            "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+ {
+    "id": 16,
+    "name": "Tokyo Roll House",
+    "cuisine": ["Sushi"],
+    "rating": 4.8,
+    "reviewCount": 1980,
+    "deliveryTime": "40-55 min",
+    "minOrder": 25,
+    "deliveryFee": 4.99,
+    "image": "https://japanesetaste.com/cdn/shop/articles/how-to-make-avocado-sushi-avocado-roll-2-ways-japanese-taste.jpg?v=1766039490&width=5760",
+    "address": "89 Sakura Lane, East Side",
+    "menu": [
+      {
+        "category": "Sushi Rolls",
+        "items": [
+          {
+            "id": 1601,
+            "name": "California Roll",
+            "description": "Crab, avocado, and cucumber.",
+            "price": 9.99,
+            "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 1602,
+            "name": "Veg Tempura Roll",
+            "description": "Crispy vegetable tempura with avocado.",
+            "price": 10.99,
+            "image": "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 1605,
+            "name": "Dragon Roll",
+            "description": "Eel, cucumber, topped with avocado slices.",
+            "price": 15.99,
+            "image": "https://i.ytimg.com/vi/L1THvfX5LTM/maxresdefault.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Nigiri",
+        "items": [
+          {
+            "id": 1603,
+            "name": "Salmon Nigiri (2pc)",
+            "description": "Fresh salmon over seasoned rice.",
+            "price": 6.99,
+            "image": "https://thumb.photo-ac.com/7e/7e11d90d1d582f4e690e6a9c26af2eb9_t.jpeg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 1606,
+            "name": "Tuna Nigiri (2pc)",
+            "description": "Lean tuna served over sushi rice.",
+            "price": 7.49,
+            "image": "https://img.freepik.com/free-photo/side-view-nigiri-sushi-with-tuna-bamboo-leaf-served-with-pickled-ginger-slices-wasabi-plate_141793-11150.jpg?semt=ais_user_personalization&w=740&q=80",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Appetizers",
+        "items": [
+          {
+            "id": 1604,
+            "name": "Miso Soup",
+            "description": "Traditional soup with tofu and seaweed.",
+            "price": 3.99,
+            "image": "https://thewillowskitchen.com/wp-content/uploads/2023/05/tofu-wakame-miso-soup-1.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 1607,
+            "name": "Edamame",
+            "description": "Steamed soybeans with sea salt.",
+            "price": 4.99,
+            "image": "https://media.istockphoto.com/id/175434745/photo/edamame.jpg?s=612x612&w=0&k=20&c=YJwE1OudxD0B-yt8RDoYkJyzM_9tf9DuJwIchGJ0Aos=",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "StoneCrust Pizzeria",
+    "cuisine": ["Pizza"],
+    "rating": 4.3,
+    "reviewCount": 890,
+    "deliveryTime": "30-40 min",
+    "minOrder": 14,
+    "deliveryFee": 2.49,
+    "image": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=800&q=80",
+    "address": "12 Market Road, Central",
+    "menu": [
+      {
+        "category": "Popular Pizzas",
+        "items": [
+          {
+            "id": 1701,
+            "name": "Four Cheese Delight",
+            "description": "Mozzarella, parmesan, cheddar, and blue cheese on a thin crust.",
+            "price": 16.99,
+            "image": "https://static.vecteezy.com/system/resources/previews/017/167/799/large_2x/fragrant-italian-pizza-of-four-cheeses-parmesan-dor-blue-mozzarella-cheddar-close-up-top-view-photo.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 1702,
+            "name": "Spicy Pepper Burst",
+            "description": "Pepperoni, jalapeños, chili oil, and mozzarella.",
+            "price": 17.49,
+            "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 1705,
+            "name": "Garden Veg Supreme",
+            "description": "Bell peppers, olives, onions, mushrooms, and mozzarella.",
+            "price": 15.49,
+            "image": "https://mambeno.co.uk/wp-content/uploads/2020/09/Vegetarpizza-med-loeg-peberfrugt-og-champignon-scaled-1600x1067.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 1706,
+            "name": "Smoky BBQ Chicken",
+            "description": "Grilled chicken, BBQ sauce, onions, and cheese.",
+            "price": 18.49,
+            "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Sides",
+        "items": [
+          {
+            "id": 1703,
+            "name": "Herb Garlic Bread",
+            "description": "Toasted bread with garlic butter and Italian herbs.",
+            "price": 5.99,
+            "image": "https://cdn.mygingergarlickitchen.com/images/800px/800px-garlic-bread-5.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 1707,
+            "name": "Cheesy Jalapeño Poppers",
+            "description": "Crispy jalapeños stuffed with cheese.",
+            "price": 6.49,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAwMKrGzedYEApMP5rgVBALP1YSg0MJJ1t-w&s",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 1708,
+            "name": "Loaded Potato Wedges",
+            "description": "Seasoned wedges topped with cheese and herbs.",
+            "price": 6.99,
+            "image": "https://www.pamperedchef.com/iceberg/com/recipe/1821687-lg.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Pasta",
+        "items": [
+          {
+            "id": 1709,
+            "name": "Creamy Alfredo Pasta",
+            "description": "Penne pasta tossed in creamy alfredo sauce.",
+            "price": 13.49,
+            "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 1710,
+            "name": "Spicy Arrabbiata Pasta",
+            "description": "Pasta in spicy tomato garlic sauce.",
+            "price": 12.99,
+            "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Desserts",
+        "items": [
+          {
+            "id": 1704,
+            "name": "Classic Cheesecake",
+            "description": "Rich baked cheesecake with vanilla cream.",
+            "price": 7.49,
+            "image": "https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 1711,
+            "name": "Chocolate Lava Cake",
+            "description": "Warm chocolate cake with molten center.",
+            "price": 6.99,
+            "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Beverages",
+        "items": [
+          {
+            "id": 1712,
+            "name": "Classic Cola",
+            "description": "Chilled fizzy cola drink.",
+            "price": 2.49,
+            "image": "https://thumbs.dreamstime.com/b/chilled-glass-classic-cola-beverage-ice-cubes-bubbles-refreshing-summer-setup-425703353.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 1713,
+            "name": "Fresh Lime Soda",
+            "description": "Refreshing lime soda with mint.",
+            "price": 2.99,
+            "image": "https://c4.wallpaperflare.com/wallpaper/164/694/329/mint-water-cocktails-ice-wallpaper-preview.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "GrillTown Burgers",
+    "cuisine": ["Burgers"],
+    "rating": 4.1,
+    "reviewCount": 640,
+    "deliveryTime": "20-30 min",
+    "minOrder": 11,
+    "deliveryFee": 1.79,
+    "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80",
+    "address": "77 Lake View Street, West End",
+    "menu": [
+      {
+        "category": "Burgers",
+        "items": [
+          {
+            "id": 1801,
+            "name": "Smoky BBQ Stack",
+            "description": "Grilled beef patty, BBQ sauce, cheddar, and onion rings.",
+            "price": 12.99,
+            "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 1802,
+            "name": "Crispy Veg Crunch",
+            "description": "Fried veggie patty with lettuce, tomato, and house sauce.",
+            "price": 10.49,
+            "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Sides",
+        "items": [
+          {
+            "id": 1803,
+            "name": "Seasoned Wedges",
+            "description": "Potato wedges tossed with herbs and spices.",
+            "price": 4.99,
+            "image": "https://media.istockphoto.com/id/1182303795/photo/potato-wedges-baked-with-rosemary-fast-food.jpg?s=612x612&w=0&k=20&c=vfosXbadLgkFWqcUXzLVI0kPurCjVlJyITSxnIGvxJM=",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Shakes",
+        "items": [
+          {
+            "id": 1804,
+            "name": "Vanilla Bean Shake",
+            "description": "Classic vanilla milkshake with real vanilla beans.",
+            "price": 5.49,
+            "image": "https://img.freepik.com/premium-photo/there-is-glass-milkshake-with-vanilla-vanilla-beans-generative-ai_1035757-7532.jpg?semt=ais_user_personalization&w=740&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Tokyo Roll House",
+    "cuisine": ["Sushi"],
+    "rating": 4.6,
+    "reviewCount": 1720,
+    "deliveryTime": "45-55 min",
+    "minOrder": 26,
+    "deliveryFee": 4.79,
+    "image": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80",
+    "address": "5 Sakura Avenue, East Side",
+    "menu": [
+      {
+        "category": "Sushi Rolls",
+        "items": [
+          {
+            "id": 1901,
+            "name": "Crunchy Shrimp Roll",
+            "description": "Tempura shrimp, cucumber, topped with crispy flakes.",
+            "price": 14.99,
+            "image": "https://www.dinneratthezoo.com/wp-content/uploads/2016/07/shrimp-tempura-roll-5-500x500.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 1902,
+            "name": "Avocado Sesame Roll",
+            "description": "Fresh avocado wrapped with sesame-seasoned rice.",
+            "price": 9.49,
+            "image": "https://img.freepik.com/premium-photo/appetizing-sushi-roll-california-with-eel-avocado-cucumber-sesame-seeds_135427-6485.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 1904,
+            "name": "Spicy Tuna Roll",
+            "description": "Fresh tuna mixed with spicy mayo and cucumber.",
+            "price": 13.99,
+            "image": "https://www.kikkoman.eu/fileadmin/_processed_/0/f/csm_1025-recipe-page-Spicy-tuna-and-salmon-rolls_desktop_43b394c33d.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 1905,
+            "name": "Dragon Roll",
+            "description": "Eel and cucumber topped with avocado and eel sauce.",
+            "price": 16.49,
+            "image": "https://media.istockphoto.com/id/506104054/photo/green-dragon-sushi-roll-with-eel-avocado-cucumber-wasabi-and.jpg?s=612x612&w=0&k=20&c=qV01f0tOqXZ9-Q29dIu-xfoMu5fCkGAa17B7nV7La_A=",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 1906,
+            "name": "Vegetable Tempura Roll",
+            "description": "Crispy tempura vegetables with sweet soy glaze.",
+            "price": 10.99,
+            "image": "https://www.kikkoman.eu/fileadmin/_processed_/9/b/csm_1414_Vegan_Tempura_Sushi_Mobile_Header_a763bd7b63.webp",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Nigiri",
+        "items": [
+          {
+            "id": 1907,
+            "name": "Salmon Nigiri (2pc)",
+            "description": "Fresh salmon over seasoned sushi rice.",
+            "price": 6.99,
+            "image": "https://img.freepik.com/premium-photo/sake-nigiri-sushi-with-raw-salmon-black-background_70216-732.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 1908,
+            "name": "Tuna Nigiri (2pc)",
+            "description": "Premium tuna slices on sushi rice.",
+            "price": 7.49,
+            "image": "https://img.freepik.com/free-photo/side-view-nigiri-sushi-with-tuna-bamboo-leaf-served-with-pickled-ginger-slices-wasabi-plate_141793-11148.jpg?semt=ais_user_personalization&w=740&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 1909,
+            "name": "Shrimp Nigiri (2pc)",
+            "description": "Cooked shrimp served over rice.",
+            "price": 5.99,
+            "image": "https://img.freepik.com/premium-photo/ebi-nigiri-sushi-shrimp-nigirizushi-cooked-japanese-rice-kome-with-toppings-fresh-cooked-shrimp-prawn_511235-12403.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Appetizers",
+        "items": [
+          {
+            "id": 1903,
+            "name": "Crispy Tofu Bites",
+            "description": "Fried tofu served with sweet chili dip.",
+            "price": 6.49,
+            "image": "https://frommybowl.com/wp-content/uploads/2020/07/Sweet_Chili_Tofu_Baked_Vegan_FromMyBowl-5.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 1910,
+            "name": "Edamame",
+            "description": "Steamed soybeans sprinkled with sea salt.",
+            "price": 4.99,
+            "image": "https://static.vecteezy.com/system/resources/thumbnails/047/573/106/small/steamed-edamame-sprinkled-with-sea-salt-and-served-with-a-side-of-brown-rice-photo.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 1911,
+            "name": "Gyoza (6pc)",
+            "description": "Pan-fried dumplings filled with chicken and vegetables.",
+            "price": 7.99,
+            "image": "https://static.vecteezy.com/system/resources/previews/066/573/101/non_2x/fried-gyoza-dumplings-served-on-wooden-board-with-soy-sauce-and-chopsticks-photo.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 1912,
+            "name": "Miso Soup",
+            "description": "Classic Japanese soup with tofu and seaweed.",
+            "price": 3.99,
+            "image": "https://thewillowskitchen.com/wp-content/uploads/2023/05/tofu-wakame-miso-soup-1.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Desserts",
+        "items": [
+          {
+            "id": 1913,
+            "name": "Mochi Ice Cream",
+            "description": "Soft rice cake filled with vanilla ice cream.",
+            "price": 5.49,
+            "image": "https://static.vecteezy.com/system/resources/previews/058/503/023/non_2x/colorful-japanese-mochi-ice-cream-desserts-on-plate-ready-to-eat-photo.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 1914,
+            "name": "Green Tea Cheesecake",
+            "description": "Creamy cheesecake infused with matcha flavor.",
+            "price": 6.99,
+            "image": "https://www.keep-calm-and-eat-ice-cream.com/wp-content/uploads/2022/08/Matcha-cheesecake-hero-12.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Urban Noodle Co.",
+    "cuisine": ["Asian"],
+    "rating": 4.4,
+    "reviewCount": 910,
+    "deliveryTime": "30-40 min",
+    "minOrder": 18,
+    "deliveryFee": 2.99,
+    "image": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/ecbcb0e5-d6c6-4d30-8b25-3a28ec3b2154.__CR0,0,2021,1250_PT0_SX970_V1___.png",
+    "address": "19 Fusion Street, North City",
+    "menu": [
+      {
+        "category": "Noodles",
+        "items": [
+          {
+            "id": 2001,
+            "name": "Spicy Chicken Ramen",
+            "description": "Ramen noodles in spicy broth with grilled chicken.",
+            "price": 13.49,
+            "image": "https://www.elmundoeats.com/wp-content/uploads/2022/01/RC-Spicy-ramen-with-chicken-katsu-in-a-bowl-view-from-top.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2002,
+            "name": "Veg Hakka Noodles",
+            "description": "Stir-fried noodles with vegetables and soy sauce.",
+            "price": 10.99,
+            "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2003,
+            "name": "Chili Garlic Noodles",
+            "description": "Flat noodles tossed in chili-garlic sauce with scallions.",
+            "price": 11.49,
+            "image": "https://www.chilitochoc.com/wp-content/uploads/2022/11/spicy-garlic-chili-oil-noodles-with-chopsticks.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2004,
+            "name": "Teriyaki Beef Udon",
+            "description": "Thick udon noodles with tender beef in teriyaki glaze.",
+            "price": 14.99,
+            "image": "https://veganeverytime.com/wp-content/uploads/2024/01/teriyaki-udon-noodles-3.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Rice Bowls",
+        "items": [
+          {
+            "id": 2005,
+            "name": "Chicken Fried Rice",
+            "description": "Wok-tossed rice with chicken, egg, and vegetables.",
+            "price": 11.99,
+            "image": "https://img.freepik.com/premium-photo/fried-rice-with-egg-chicken-authentic-chinese-cookery-with-asian-flavors_817921-39336.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2006,
+            "name": "Veg Schezwan Rice",
+            "description": "Spicy schezwan rice with mixed vegetables.",
+            "price": 10.49,
+            "image": "https://thespicepaletteus.com/wp-content/uploads/2025/03/Schezwan-Fried-riceChicken.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2007,
+            "name": "Teriyaki Tofu Bowl",
+            "description": "Grilled tofu with teriyaki sauce over steamed rice.",
+            "price": 12.49,
+            "image": "https://maisonmarmite.com/wp-content/uploads/2025/09/Teriyaki-Tofu-Bowl-01.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Starters",
+        "items": [
+          {
+            "id": 2008,
+            "name": "Crispy Spring Rolls",
+            "description": "Golden fried rolls stuffed with vegetables.",
+            "price": 6.99,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ8Dyw6yTJu8ixxjkel8wQWvuQMG5q7SIn1Q&s",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2009,
+            "name": "Chicken Momos",
+            "description": "Steamed dumplings filled with seasoned chicken.",
+            "price": 8.49,
+            "image": "https://static.india.com/wp-content/uploads/2024/12/FEATURE-2024-12-15T174448.090.jpg?impolicy=Medium_Widthonly&w=350&h=220",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2010,
+            "name": "Crispy Corn",
+            "description": "Crunchy corn tossed with spices and herbs.",
+            "price": 6.49,
+            "image": "https://www.funfoodfrolic.com/wp-content/uploads/2017/09/Crispy-Corn-3-650x900.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Soups",
+        "items": [
+          {
+            "id": 2011,
+            "name": "Hot & Sour Soup",
+            "description": "Tangy and spicy soup with vegetables and tofu.",
+            "price": 5.99,
+            "image": "https://mediavine-res.cloudinary.com/image/upload/s--3MFAevEx--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1695938019/x0ztmihl7hmfz0hpyny3.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2012,
+            "name": "Chicken Manchow Soup",
+            "description": "Thick chicken soup topped with crispy noodles.",
+            "price": 6.99,
+            "image": "https://sinfullyspicy.com/wp-content/uploads/2023/12/1200-by-1200-images-1.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Sweet Cravings",
+    "cuisine": ["Desserts"],
+    "rating": 4.7,
+    "reviewCount": 1500,
+    "deliveryTime": "20-30 min",
+    "minOrder": 9,
+    "deliveryFee": 1.49,
+    "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80",
+    "address": "33 Blossom Lane, Uptown",
+    "menu": [
+      {
+        "category": "Desserts",
+        "items": [
+          {
+            "id": 2101,
+            "name": "Belgian Chocolate Brownie",
+            "description": "Fudgy brownie made with premium dark chocolate.",
+            "price": 6.99,
+            "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2102,
+            "name": "Strawberry Cheesecake Jar",
+            "description": "Layered cheesecake with strawberry compote.",
+            "price": 7.49,
+            "image": "https://c.ndtvimg.com/2019-04/p63pva9g_strawberry-cheesecake_625x300_30_April_19.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2103,
+            "name": "Classic Tiramisu Cup",
+            "description": "Coffee-soaked sponge layered with mascarpone cream.",
+            "price": 7.99,
+            "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2104,
+            "name": "Red Velvet Pastry",
+            "description": "Moist red velvet sponge with cream cheese frosting.",
+            "price": 6.49,
+            "image": "https://freshaprilflours.com/wp-content/uploads/2017/09/rv-cake-04.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Ice Creams",
+        "items": [
+          {
+            "id": 2105,
+            "name": "Vanilla Bean Scoop",
+            "description": "Classic vanilla ice cream made with real beans.",
+            "price": 3.99,
+            "image": "https://sugarpursuit.com/wp-content/uploads/2023/05/Vanilla-bean-ice-cream-thumbnail.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2106,
+            "name": "Chocolate Fudge Scoop",
+            "description": "Rich chocolate ice cream with fudge swirls.",
+            "price": 4.49,
+            "image": "https://i2.wp.com/lifemadesimplebakes.com/wp-content/uploads/2021/07/Chocolate-Fudge-Ice-Cream-square-1200.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2107,
+            "name": "Mango Sorbet",
+            "description": "Refreshing dairy-free mango sorbet.",
+            "price": 4.99,
+            "image": "https://img.freepik.com/free-photo/high-angle-tasty-granita-dessert-with-leaves_23-2149395573.jpg?semt=ais_hybrid&w=740&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Beverages",
+        "items": [
+          {
+            "id": 2108,
+            "name": "Cold Coffee",
+            "description": "Chilled coffee blended with milk and ice.",
+            "price": 4.99,
+            "image": "https://img.freepik.com/free-photo/iced-coffee-tall-glass-with-cream-topped-with-iced-coffee-decorated-with-coffee-beans_1150-22916.jpg?semt=ais_user_personalization&w=740&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2109,
+            "name": "Hot Chocolate",
+            "description": "Creamy hot chocolate topped with cocoa powder.",
+            "price": 4.49,
+            "image": "https://images.stockcake.com/public/4/0/9/40953f2d-00df-42d7-adb8-cbad0f87b7ea_large/decadent-hot-chocolate-stockcake.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Spice Route Curry House",
+    "cuisine": ["Curry"],
+    "rating": 4.6,
+    "reviewCount": 1340,
+    "deliveryTime": "35-45 min",
+    "minOrder": 18,
+    "deliveryFee": 2.99,
+    "image": "https://media.istockphoto.com/id/1793032836/photo/traditional-indian-meal-background.jpg?s=612x612&w=0&k=20&c=zLyNhNfXLw_3ksuWQCY6RIgZsWxN6R8oxHB30VIyh6s=",
+    "address": "14 Royal Street, Downtown",
+    "menu": [
+      {
+        "category": "Signature Curries",
+        "items": [
+          {
+            "id": 2201,
+            "name": "Butter Chicken",
+            "description": "Tender chicken cooked in a creamy tomato-based gravy.",
+            "price": 14.99,
+            "image": "https://t4.ftcdn.net/jpg/08/56/74/83/360_F_856748341_Wp9UQ4gRIV19G6swT3pG4QjF84OwVOZu.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2202,
+            "name": "Paneer Tikka Masala",
+            "description": "Char-grilled paneer cubes in rich spiced masala sauce.",
+            "price": 13.49,
+            "image": "https://thumbs.dreamstime.com/b/delicious-paneer-tikka-masala-served-dark-bowl-garnished-fresh-herbs-spices-grilled-cubes-rich-flavorful-tomato-377524190.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2203,
+            "name": "Lamb Rogan Josh",
+            "description": "Slow-cooked lamb curry with Kashmiri spices.",
+            "price": 16.99,
+            "image": "https://www.krumpli.co.uk/wp-content/uploads/2023/10/Lamb-Rogan-Josh-Curry-04-720x720.jpg.webp",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 2206,
+            "name": "Vegetable Korma",
+            "description": "Mixed vegetables cooked in mildly spiced coconut gravy.",
+            "price": 12.49,
+            "image": "https://i0.wp.com/curryandvanilla.com/wp-content/uploads/2019/06/vegetable-kurma-with-coconut-milk-b.jpg?resize=579%2C579&ssl=1",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2210,
+            "name": "Chicken Chettinad",
+            "description": "Spicy South Indian chicken curry with roasted spices.",
+            "price": 15.49,
+            "image": "https://swatisani.net/kitchen/wp-content/uploads/2015/10/IMG_9350.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 2211,
+            "name": "Dal Makhani",
+            "description": "Slow-cooked black lentils simmered in butter and cream.",
+            "price": 11.99,
+            "image": "https://i.ytimg.com/vi/BYcgqkT-JbI/maxresdefault.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Breads & Sides",
+        "items": [
+          {
+            "id": 2204,
+            "name": "Butter Naan",
+            "description": "Soft leavened bread brushed with butter.",
+            "price": 3.49,
+            "image": "https://t3.ftcdn.net/jpg/08/95/50/04/360_F_895500474_IDUMxbOGEBn29tyPyjG8oLEEWlK8ZlOg.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2205,
+            "name": "Jeera Rice",
+            "description": "Fragrant basmati rice tempered with cumin.",
+            "price": 4.99,
+            "image": "https://www.kuchpakrahahai.in/wp-content/uploads/2022/04/Indian-Cumin-Rice.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2207,
+            "name": "Garlic Naan",
+            "description": "Soft naan topped with roasted garlic.",
+            "price": 3.99,
+            "image": "https://img.freepik.com/free-photo/pakistani-food-cloth-flat-lay_23-2148825098.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2212,
+            "name": "Plain Steamed Rice",
+            "description": "Classic long-grain basmati rice.",
+            "price": 3.99,
+            "image": "https://media.istockphoto.com/id/925340982/photo/cooked-plain-white-basmati-rice-in-terracotta-bowl-over-plain-or-wooden-background.jpg?s=612x612&w=0&k=20&c=GiT3GVbjjvB6SDUbzMans0DypsMvsNersfH0foA-saw=",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2213,
+            "name": "Lachha Paratha",
+            "description": "Layered whole wheat flatbread.",
+            "price": 3.79,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv-sNVAnLkn2rk1S4rFauv3kITlgtizK_a9g&s",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Starters",
+        "items": [
+          {
+            "id": 2208,
+            "name": "Chicken Tikka",
+            "description": "Char-grilled chicken marinated in spices.",
+            "price": 11.99,
+            "image": "https://www.shutterstock.com/image-photo/deliciously-spiced-chicken-tikka-kabab-600nw-2669814479.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2209,
+            "name": "Paneer Pakora",
+            "description": "Gram-flour battered paneer fritters.",
+            "price": 8.49,
+            "image": "https://hinzcooking.com/wp-content/uploads/2022/02/paneer-pakora.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2214,
+            "name": "Vegetable Samosa",
+            "description": "Crispy pastry stuffed with spiced potatoes and peas.",
+            "price": 5.49,
+            "image": "https://www.spiceandcolour.com/wp-content/uploads/2020/06/receta-samosas-vegetales-01.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2215,
+            "name": "Hara Bhara Kebab",
+            "description": "Spinach and green pea patties shallow-fried.",
+            "price": 7.99,
+            "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/01/hara-bhara-kabab-recipe-1.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Desserts",
+        "items": [
+          {
+            "id": 2216,
+            "name": "Gulab Jamun",
+            "description": "Soft milk-solid dumplings soaked in sugar syrup.",
+            "price": 4.99,
+            "image": "https://www.saveur.com/uploads/2019/02/08/OCJFLJ7PV5FT3GW42CAUWLER3E.jpg?format=auto&optimize=high&width=1440",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2217,
+            "name": "Mango Kulfi",
+            "description": "Traditional Indian frozen dessert with mango flavor.",
+            "price": 5.99,
+            "image": "https://www.whiskaffair.com/wp-content/uploads/2020/06/Mango-Kulfi-2-1.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "El Toro Taco Bar",
+    "cuisine": ["Tacos"],
+    "rating": 4.4,
+    "reviewCount": 920,
+    "deliveryTime": "20-30 min",
+    "minOrder": 12,
+    "deliveryFee": 1.99,
+    "image": "https://img.freepik.com/free-photo/delicious-tacos-arrangement_23-2151048015.jpg?semt=ais_user_personalization&w=740&q=80",
+    "address": "56 Fiesta Avenue, Midtown",
+    "menu": [
+      {
+        "category": "Tacos",
+        "items": [
+          {
+            "id": 2301,
+            "name": "Carne Asada Taco",
+            "description": "Grilled beef, onions, cilantro, and lime on a corn tortilla.",
+            "price": 4.99,
+            "image": "https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2302,
+            "name": "Crispy Fish Taco",
+            "description": "Beer-battered fish with slaw and chipotle mayo.",
+            "price": 5.49,
+            "image": "https://louisianacookin.com/wp-content/uploads/2020/03/lc_image005_RGB_1080x1080-1.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2303,
+            "name": "Grilled Veggie Taco",
+            "description": "Seasoned grilled vegetables with avocado crema.",
+            "price": 4.49,
+            "image": "https://www.completelydelicious.com/wp-content/uploads/2020/07/grilled-veggie-tacos-5.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2305,
+            "name": "Chicken Al Pastor Taco",
+            "description": "Marinated chicken with pineapple and chili glaze.",
+            "price": 4.99,
+            "image": "https://carlsbadcravings.com/wp-content/uploads/2022/06/chicken-al-pastor-2a.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2306,
+            "name": "Spicy Shrimp Taco",
+            "description": "Grilled shrimp tossed in spicy chipotle sauce.",
+            "price": 5.99,
+            "image": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 2307,
+            "name": "Black Bean & Corn Taco",
+            "description": "Black beans, roasted corn, pico de gallo, and lime crema.",
+            "price": 4.29,
+            "image": "https://discovercaliforniawines.com/wp-content/uploads/2021/09/1_VeganBlackBean_Tacos.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Sides",
+        "items": [
+          {
+            "id": 2304,
+            "name": "Loaded Nachos",
+            "description": "Corn chips topped with cheese, beans, and jalapeños.",
+            "price": 7.99,
+            "image": "https://media.istockphoto.com/id/474048190/photo/nachos-supreme.jpg?s=612x612&w=0&k=20&c=CWnaGAVNGeF8sOF92BuZz7iM_JVBdfgO4TmPNokWcIg=",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2308,
+            "name": "Mexican Street Corn",
+            "description": "Grilled corn with chili, lime, mayo, and cheese.",
+            "price": 4.99,
+            "image": "https://static.vecteezy.com/system/resources/previews/039/669/733/non_2x/ai-generated-elotes-grilled-mexican-street-corn-on-the-cob-with-cotija-cheese-chili-powder-mayonnaise-photo.jpeg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2309,
+            "name": "Chips & Guacamole",
+            "description": "Freshly made guacamole served with corn chips.",
+            "price": 5.49,
+            "image": "https://media.istockphoto.com/id/460388415/photo/mexican-nacho-chips-with-guacamole-in-a-bowl-and-a-lime.jpg?s=612x612&w=0&k=20&c=cv-k9onX0vUI73d8XvdDGBdLCQ6v-VxZDMvB0mPeLyQ=",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Burritos & Bowls",
+        "items": [
+          {
+            "id": 2310,
+            "name": "Chicken Burrito Bowl",
+            "description": "Rice, beans, grilled chicken, salsa, and sour cream.",
+            "price": 9.99,
+            "image": "https://www.soulfullymade.com/wp-content/uploads/2023/05/chicken-burrito-bowls-square-1.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2311,
+            "name": "Veggie Burrito",
+            "description": "Rice, beans, grilled vegetables, and cheese wrap.",
+            "price": 8.99,
+            "image": "https://media.istockphoto.com/id/1317280854/photo/mexican-rice-and-chicken-burrito.jpg?s=612x612&w=0&k=20&c=iI8z89_lm7Vw1-YK31rVpqDJRqJJIqmavQB3DenrAkk=",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Drinks",
+        "items": [
+          {
+            "id": 2312,
+            "name": "Classic Lime Margarita",
+            "description": "Refreshing lime margarita served chilled.",
+            "price": 6.99,
+            "image": "https://media.istockphoto.com/id/1503711105/photo/margarita-cocktail-with-lime.jpg?s=612x612&w=0&k=20&c=1VwKShHS2SJO0qATq_qi2a4ynSCpgAmUnxADd3zwaAQ=",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2313,
+            "name": "Horchata",
+            "description": "Sweet rice milk flavored with cinnamon.",
+            "price": 3.99,
+            "image": "https://whattocooktoday.com/wp-content/uploads/2012/04/IMG_8512.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Bella Roma Pasta Co.",
+    "cuisine": ["Pasta"],
+    "rating": 4.5,
+    "reviewCount": 1180,
+    "deliveryTime": "30-40 min",
+    "minOrder": 16,
+    "deliveryFee": 2.49,
+    "image": "https://slicelife.imgix.net/2287/photos/original/spgt.jpg?auto=compress&auto=format",
+    "address": "9 Olive Street, Central Plaza",
+    "menu": [
+      {
+        "category": "Classic Pastas",
+        "items": [
+          {
+            "id": 2401,
+            "name": "Spaghetti Carbonara",
+            "description": "Spaghetti tossed with creamy egg sauce and pancetta.",
+            "price": 13.99,
+            "image": "https://media.istockphoto.com/id/1290240693/photo/spaghetti-alla-carbonara-pasta-with-pancetta-egg-parmesan-cheese-and-cream-sauce.jpg?s=612x612&w=0&k=20&c=L4Cp4lRdMJOrYUjrravSoClWGVbDghmtjGIdT-k4fI8=",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2402,
+            "name": "Penne Arrabbiata",
+            "description": "Penne pasta in spicy tomato garlic sauce.",
+            "price": 11.49,
+            "image": "https://recipesblob.oetker.in/assets/4783fdd6cb1b435daf84be42201037cb/636x382/penne-arrabbiata.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2403,
+            "name": "Creamy Mushroom Alfredo",
+            "description": "Fettuccine pasta in rich Alfredo sauce with mushrooms.",
+            "price": 12.99,
+            "image": "https://media.hellofresh.com/q_100,w_3840,f_auto,c_limit,fl_lossy/recipes/image/creamy-mushroom-alfredo-7dc94d5c.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2405,
+            "name": "Lasagna Bolognese",
+            "description": "Layered pasta with slow-cooked beef ragu and béchamel.",
+            "price": 15.99,
+            "image": "https://www.cucinabyelena.com/wp-content/uploads/2022/02/Italian-Lasagna-Bolognese-with-Bechamel-Sauce-33.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2406,
+            "name": "Pesto Genovese Linguine",
+            "description": "Linguine tossed in fresh basil pesto sauce.",
+            "price": 12.49,
+            "image": "https://jazkitchen.co.uk/wp-content/uploads/2025/05/Linguine-al-Pesto-08967.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2407,
+            "name": "Seafood Marinara",
+            "description": "Spaghetti with prawns, calamari, and tomato marinara.",
+            "price": 16.49,
+            "image": "https://assets.bonappetit.com/photos/5a2826911a178d3636ce8fdf/1:1/w_3230,h_3230,c_limit/seafood-spaghetti-with-mussels-and-shrimp.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Baked Pastas",
+        "items": [
+          {
+            "id": 2408,
+            "name": "Baked Ziti",
+            "description": "Ziti pasta baked with tomato sauce and mozzarella.",
+            "price": 13.49,
+            "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/01/baked-ziti-recipe.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2409,
+            "name": "Chicken Pasta Bake",
+            "description": "Creamy baked pasta with grilled chicken and cheese.",
+            "price": 14.99,
+            "image": "https://media.istockphoto.com/id/1253199984/photo/pasta-casserole-with-barbecue-chicken-breast-cheese-and-vegetables.jpg?s=612x612&w=0&k=20&c=v8EIz9h1VSN3sNwLXjLFFyH85AY9nA2Fqp7Iln81gsM=",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Sides",
+        "items": [
+          {
+            "id": 2404,
+            "name": "Garlic Parmesan Bread",
+            "description": "Toasted bread with garlic butter and parmesan.",
+            "price": 4.99,
+            "image": "https://farahjeats.com/wp-content/uploads/2022/01/IMG_9467_jpg-2-500x500.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2410,
+            "name": "Bruschetta Trio",
+            "description": "Toasted bread topped with tomato, olive, and ricotta.",
+            "price": 6.49,
+            "image": "https://apuginthekitchen.com/wp-content/uploads/2016/01/img_0171.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2411,
+            "name": "Classic Caesar Salad",
+            "description": "Romaine lettuce, croutons, parmesan, and Caesar dressing.",
+            "price": 7.99,
+            "image": "https://www.feastingathome.com/wp-content/uploads/2021/10/Caesar-salad_-4-800x800.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Desserts",
+        "items": [
+          {
+            "id": 2412,
+            "name": "Tiramisu",
+            "description": "Classic Italian dessert with mascarpone and coffee.",
+            "price": 6.99,
+            "image": "https://media.istockphoto.com/id/1248489319/photo/tiramisu-cake-with-mint.jpg?s=612x612&w=0&k=20&c=bE6ntOpTO7S8T_Rr39cnNkV_252VUB8-vymkN9WsQRQ=",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2413,
+            "name": "Chocolate Lava Cake",
+            "description": "Warm chocolate cake with molten center.",
+            "price": 7.49,
+            "image": "https://cdn.shopify.com/s/files/1/0549/5819/4901/files/Molten_Lava_Cake_With_Ganache_Center_the_Ultimate_Indulgence_0002.jpg?v=1741532140",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Healthy Bowl Kitchen",
+    "cuisine": ["Healthy"],
+    "rating": 4.7,
+    "reviewCount": 1680,
+    "deliveryTime": "25-35 min",
+    "minOrder": 15,
+    "deliveryFee": 1.99,
+    "image": "https://media.istockphoto.com/id/1348886516/photo/variety-of-healthy-smoothie-bowls.jpg?s=612x612&w=0&k=20&c=_R3m6GpfBbp9A3kbOR9tzYU8MCMJxajvCFfVXWff2W0=",
+    "address": "12 Wellness Road, Uptown",
+    "menu": [
+      {
+        "category": "Healthy Bowls",
+        "items": [
+          {
+            "id": 2501,
+            "name": "Quinoa Power Bowl",
+            "description": "Quinoa with roasted veggies, avocado, and tahini dressing.",
+            "price": 11.99,
+            "image": "https://www.wellplated.com/wp-content/uploads/2016/04/Buddha-Bowl-with-Quinoa.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2502,
+            "name": "Grilled Chicken Protein Bowl",
+            "description": "Lean grilled chicken with brown rice and greens.",
+            "price": 13.49,
+            "image": "https://media.istockphoto.com/id/506583996/photo/grilled-chicken-with-quinoa-and-brown-rice-salad.jpg?s=612x612&w=0&k=20&c=mgAqaQ28v4V8r4E5jVVI7DXYmAEAjkI3d7rVXsTSb4U=",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2503,
+            "name": "Vegan Buddha Bowl",
+            "description": "Chickpeas, sweet potato, kale, and hummus.",
+            "price": 12.99,
+            "image": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2504,
+            "name": "Salmon Omega Bowl",
+            "description": "Grilled salmon with quinoa and lemon dressing.",
+            "price": 15.99,
+            "image": "https://www.onceuponachef.com/images/2021/05/Quinoa-Roasted-Salmon-Bowl-with-Avocado.-Cucumber-and-Green-Goddess-Dressing-scaled-500x500.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2507,
+            "name": "Tofu Teriyaki Bowl",
+            "description": "Grilled tofu with brown rice and sesame vegetables.",
+            "price": 12.49,
+            "image": "https://img.taste.com.au/RdVLCJUW/w1200-h1200-cfill-q80/taste/2020/10/grilled-tofu-with-rice-greens-chilli-sesame-dressing-119241-1.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2508,
+            "name": "Mediterranean Falafel Bowl",
+            "description": "Falafel, couscous, cucumber, olives, and hummus.",
+            "price": 12.99,
+            "image": "https://www.themediterraneandish.com/wp-content/uploads/2022/09/falafel-bowl-recipe-3.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2509,
+            "name": "Lean Turkey Fit Bowl",
+            "description": "Seasoned turkey, quinoa, spinach, and yogurt sauce.",
+            "price": 14.49,
+            "image": "https://ontarioturkey.ca/wp-content/uploads/2017/10/TN-2.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Salads",
+        "items": [
+          {
+            "id": 2510,
+            "name": "Avocado Supergreens Salad",
+            "description": "Mixed greens, avocado, seeds, and lemon vinaigrette.",
+            "price": 9.99,
+            "image": "https://www.australianavocados.com.au/wp-content/uploads/2024/02/Shepard-avoado-supergreens-salad.png",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2511,
+            "name": "Grilled Chicken Caesar Lite",
+            "description": "Light Caesar dressing with grilled chicken breast.",
+            "price": 11.99,
+            "image": "https://www.eatingbirdfood.com/wp-content/uploads/2023/06/grilled-chicken-caesar-salad-hero.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          },
+          {
+            "id": 2512,
+            "name": "Protein Chickpea Salad",
+            "description": "Chickpeas, cucumber, tomato, and olive oil dressing.",
+            "price": 10.49,
+            "image": "https://dishingouthealth.com/wp-content/uploads/2022/04/MediterraneanChickpeaSalad_Square.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Wraps",
+        "items": [
+          {
+            "id": 2513,
+            "name": "Grilled Veggie Whole Wheat Wrap",
+            "description": "Roasted vegetables with hummus in whole wheat wrap.",
+            "price": 8.99,
+            "image": "https://brandsitesplatform-res.cloudinary.com/image/fetch/w_auto:100,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_auto,e_sharpen:85/https://assets.brandplatform.generalmills.com%2F-%2Fmedia%2Fproject%2Fgmi%2Foldelpaso%2Foldelpaso-uk%2Foepp%2Frecipes%2Froasted-vegetable-and-hummus-wraps%2Froasted-vegetable-and-hummus-wraps-hero.jpg%3Frev%3D0c6ac0b3570143d4a7f98731cf977a48",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2514,
+            "name": "Chicken Avocado Wrap",
+            "description": "Grilled chicken, avocado, lettuce, and yogurt sauce.",
+            "price": 10.99,
+            "image": "https://gimmedelicious.com/wp-content/uploads/2025/02/Chicken-and-Avocado-Burritos-1.jpg",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Smoothies",
+        "items": [
+          {
+            "id": 2505,
+            "name": "Berry Detox Smoothie",
+            "description": "Blueberry, strawberry, chia seeds, almond milk.",
+            "price": 6.99,
+            "image": "https://feelgoodfoodie.net/wp-content/uploads/2025/12/Chia-Smoothie-06-500x500.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2506,
+            "name": "Green Energy Smoothie",
+            "description": "Spinach, banana, apple, and ginger.",
+            "price": 6.49,
+            "image": "https://www.lifeisbutadish.com/wp-content/uploads/2016/01/Spinach-Apple-Detox-Smoothie-9-scaled.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2515,
+            "name": "Protein Peanut Smoothie",
+            "description": "Peanut butter, banana, oats, and plant protein.",
+            "price": 7.49,
+            "image": "https://www.theroastedroot.net/wp-content/uploads/2023/03/peanut-butter-banana-oat-protein-smoothie-1.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Healthy Snacks",
+        "items": [
+          {
+            "id": 2516,
+            "name": "Energy Date Balls",
+            "description": "Dates, nuts, cocoa, and coconut bites.",
+            "price": 4.99,
+            "image": "https://www.bowlofdelicious.com/wp-content/uploads/2016/01/Chocolate-Coconut-Energy-Balls-with-Pecans-and-Dates-square.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2517,
+            "name": "Roasted Trail Mix",
+            "description": "Roasted nuts, seeds, and dried berries.",
+            "price": 3.99,
+            "image": "https://assets.bonappetit.com/photos/595eaae9ebe72a54a152ddc6/1:1/w_2560%2Cc_limit/20170626%2520HEALTHYISH12566.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Eastern Wok House",
+    "cuisine": ["Asian"],
+    "rating": 4.5,
+    "reviewCount": 1420,
+    "deliveryTime": "30-40 min",
+    "minOrder": 18,
+    "deliveryFee": 2.49,
+    "image": "https://content.jdmagicbox.com/comp/def_content_category/sichuan-restaurants/e260f745-b3dc-4eef-a56f-4c90ea3aecc8-sichuan-restaurants-4-416fu.jpg",
+    "address": "88 Lotus Lane, Downtown",
+    "menu": [
+      {
+        "category": "Asian Specialties",
+        "items": [
+          {
+            "id": 2601,
+            "name": "Teriyaki Chicken Bowl",
+            "description": "Grilled chicken glazed with teriyaki sauce.",
+            "price": 12.99,
+            "image": "https://media.istockphoto.com/id/1451323978/photo/baked-chicken-wings-with-sweet-chili-sauce-in-a-plate-black-background-top-view.jpg?s=612x612&w=0&k=20&c=wl3TW3aD0yaQKoQu8S3su2ngZZgTME_dCZGzQ3-BF6o=",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2602,
+            "name": "Vegetable Stir Fry",
+            "description": "Seasonal vegetables tossed in soy garlic sauce.",
+            "price": 10.99,
+            "image": "https://www.sizzlingeats.com/wp-content/uploads/2020/02/Easy-Garlic-Vegetable-Stir-fry-1.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2603,
+            "name": "Thai Green Curry",
+            "description": "Coconut curry with vegetables and herbs.",
+            "price": 13.49,
+            "image": "https://hungryinthailand.com/wp-content/uploads/2023/12/vegetarian-thai-green-curry-vegetables.webp",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2604,
+            "name": "Korean Bibimbap",
+            "description": "Rice bowl with veggies, egg, and gochujang.",
+            "price": 12.49,
+            "image": "https://takestwoeggs.com/wp-content/uploads/2025/05/Overhead-Bibimbap-Korean-Rice-Bowl.webp",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2605,
+            "name": "Honey Chili Chicken",
+            "description": "Crispy chicken tossed in sweet and spicy sauce.",
+            "price": 13.99,
+            "image": "https://thespooniechef.com/wp-content/uploads/2025/04/sticky-honey-chilli-chicken-recipe-1-of-1-500x500.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2606,
+            "name": "Paneer Manchurian",
+            "description": "Fried paneer cubes in Indo-Chinese sauce.",
+            "price": 11.99,
+            "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/08/paneer-manchurian-recipe.webp",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Noodles & Rice",
+        "items": [
+          {
+            "id": 2607,
+            "name": "Chicken Hakka Noodles",
+            "description": "Stir-fried noodles with chicken and vegetables.",
+            "price": 11.49,
+            "image": "https://www.cubesnjuliennes.com/wp-content/uploads/2020/06/Spicy-Chicken-Hakka-Noodles-Recipe.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2608,
+            "name": "Veg Fried Rice",
+            "description": "Wok-tossed rice with vegetables and soy sauce.",
+            "price": 9.99,
+            "image": "https://www.indianveggiedelight.com/wp-content/uploads/2023/01/veg-fried-rice.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2609,
+            "name": "Schezwan Chicken Fried Rice",
+            "description": "Spicy Schezwan rice with chicken chunks.",
+            "price": 12.49,
+            "image": "https://i.ytimg.com/vi/e-p93dlC3tQ/sddefault.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2610,
+            "name": "Singapore Veg Noodles",
+            "description": "Thin noodles tossed with curry spices and veggies.",
+            "price": 10.99,
+            "image": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Starters",
+        "items": [
+          {
+            "id": 2611,
+            "name": "Spring Rolls",
+            "description": "Crispy rolls stuffed with vegetables.",
+            "price": 6.99,
+            "image": "https://img.freepik.com/free-photo/fried-spring-rolls-cutting-board_1150-17010.jpg?semt=ais_user_personalization&w=740&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2612,
+            "name": "Chicken Satay",
+            "description": "Grilled chicken skewers with peanut sauce.",
+            "price": 8.99,
+            "image": "https://images.ctfassets.net/szelmdrourcp/6hVFFeGGzhgsUpQeqEinWc/d0abaef6fb299cc32271afe1582d5b24/kfd-fy24-recipes-chicken-satay_i02_1800x1544.jpg?fm=webp&w=2048&q=75",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2613,
+            "name": "Crispy Corn",
+            "description": "Golden fried corn tossed with spices.",
+            "price": 5.99,
+            "image": "https://www.funfoodfrolic.com/wp-content/uploads/2017/09/Crispy-Corn-3-650x900.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Soups",
+        "items": [
+          {
+            "id": 2614,
+            "name": "Hot & Sour Soup",
+            "description": "Spicy and tangy soup with vegetables.",
+            "price": 4.99,
+            "image": "https://masalachilli.com/wp-content/uploads/2021/07/Hot-and-Sour-Soup-3.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2615,
+            "name": "Chicken Clear Soup",
+            "description": "Light broth with chicken and herbs.",
+            "price": 5.49,
+            "image": "https://media.istockphoto.com/id/468932181/photo/chicken-soup-with-rice-and-vegetables.jpg?s=612x612&w=0&k=20&c=_p51oHVDVw5R6JLIxjFTHDrHHXhoy1nWKJO6gIsPbPY=",
+            "isVegetarian": false,
+            "bestseller": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Dragon Bowl Express",
+    "cuisine": ["Chinese"],
+    "rating": 4.4,
+    "reviewCount": 1560,
+    "deliveryTime": "30-45 min",
+    "minOrder": 16,
+    "deliveryFee": 2.99,
+    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80",
+    "address": "19 Bamboo Street, East Side",
+    "menu": [
+      {
+        "category": "Chinese Classics",
+        "items": [
+          {
+            "id": 2701,
+            "name": "Kung Pao Chicken",
+            "description": "Spicy chicken with peanuts and vegetables.",
+            "price": 13.99,
+            "image": "https://leitesculinaria.com/wp-content/uploads/2020/06/kung-pao-chicken.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2702,
+            "name": "Veg Hakka Noodles",
+            "description": "Stir-fried noodles with vegetables.",
+            "price": 10.99,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Qrc3-vPlXeDWaT8w7Vtlfl7Fq6-_NVpwrw&s",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2703,
+            "name": "Manchurian Gravy",
+            "description": "Crispy veggie balls in tangy sauce.",
+            "price": 11.99,
+            "image": "https://myfoodstory.com/wp-content/uploads/2021/10/Veg-Manchurian-2.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2704,
+            "name": "Fried Rice Combo",
+            "description": "Wok-fried rice with egg and veggies.",
+            "price": 9.99,
+            "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Dim Sum & Starters",
+        "items": [
+          {
+            "id": 2705,
+            "name": "Veg Spring Rolls",
+            "description": "Crispy rolls stuffed with vegetables.",
+            "price": 6.99,
+            "image": "https://media.istockphoto.com/id/486940812/photo/baked-spring-rolls-with-deep-vegetables-and-rice.jpg?s=612x612&w=0&k=20&c=rQ5NCxvLHt8zhO3oXFCU8QCfoVG_94jKTMWjti05Bso=",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2706,
+            "name": "Chicken Momos",
+            "description": "Steamed dumplings with spiced chicken filling.",
+            "price": 7.99,
+            "image": "https://img.freepik.com/premium-photo/juicy-steamed-chicken-momos-momos-dumplings-image-photography_1020697-137236.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2707,
+            "name": "Paneer Chilli Dry",
+            "description": "Crispy paneer tossed in spicy sauce.",
+            "price": 9.49,
+            "image": "https://i.pinimg.com/736x/45/46/d4/4546d46b71b137014a58cdc3b552976c.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Noodles",
+        "items": [
+          {
+            "id": 2708,
+            "name": "Chicken Schezwan Noodles",
+            "description": "Spicy schezwan noodles with chicken.",
+            "price": 12.49,
+            "image": "https://thumbs.dreamstime.com/b/chicken-schezwan-noodles-bowl-wooden-background-279293131.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2709,
+            "name": "Veg Chow Mein",
+            "description": "Classic chow mein with mixed vegetables.",
+            "price": 10.49,
+            "image": "https://media.istockphoto.com/id/184317874/photo/beef-broccoli-chow-mein.jpg?s=612x612&w=0&k=20&c=9be_amD3HYfFBiFhQxeb-AvHDFE4_e_8q_IRAusJ4TY=",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2710,
+            "name": "Egg Noodles",
+            "description": "Stir-fried noodles with egg and scallions.",
+            "price": 11.49,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILkLfQdFvX_XJmV0o2CXITtllhwrvDB1Nxw&s",
+            "isVegetarian": false,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Rice Bowls",
+        "items": [
+          {
+            "id": 2711,
+            "name": "Chicken Fried Rice",
+            "description": "Classic fried rice with chicken and veggies.",
+            "price": 11.99,
+            "image": "https://img.freepik.com/free-photo/fried-rice-served-with-hot-syrup_157027-4061.jpg?semt=ais_hybrid&w=740&q=80",
+            "isVegetarian": false,
+            "bestseller": true
+          },
+          {
+            "id": 2712,
+            "name": "Veg Schezwan Rice",
+            "description": "Spicy schezwan rice with vegetables.",
+            "price": 10.99,
+            "image": "https://media.istockphoto.com/id/1292617507/photo/tasty-veg-schezwan-fried-rice-served-in-bowl-over-a-rustic-wooden-background-indian-cuisine.jpg?s=612x612&w=0&k=20&c=MlfiFWbcPDUj2wnjtxoHBxSUrRrKb9c1OR8rS9H4goc=",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2713,
+            "name": "Egg Fried Rice",
+            "description": "Wok-tossed rice with scrambled eggs.",
+            "price": 10.49,
+            "image": "https://www.budgetbytes.com/wp-content/uploads/2023/10/Scrambled-Eggs-With-Rice-Plated-500x500.jpg",
+            "isVegetarian": false,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Desserts",
+        "items": [
+          {
+            "id": 2714,
+            "name": "Honey Noodles",
+            "description": "Crispy noodles drizzled with honey and sesame.",
+            "price": 5.99,
+            "image": "https://www.whiskaffair.com/wp-content/uploads/2020/05/Darsaan-2-3.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2715,
+            "name": "Fried Ice Cream",
+            "description": "Vanilla ice cream with crispy coating.",
+            "price": 6.49,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHC8yibxnjm0sNDbtQKm7IsfyPSt0fhBqiHg&s",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Beverages",
+        "items": [
+          {
+            "id": 2716,
+            "name": "Jasmine Green Tea",
+            "description": "Light and refreshing jasmine tea.",
+            "price": 2.99,
+            "image": "https://img.freepik.com/premium-photo/chinese-green-tea-with-jasmine_75924-1581.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2717,
+            "name": "Lemon Iced Tea",
+            "description": "Chilled tea with lemon flavor.",
+            "price": 3.49,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5oF0w-7M-J3UfuWh6Z-Ag6eoSD1ngBT4qSQ&s",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Brew & Bean Café",
+    "cuisine": ["Coffee"],
+    "rating": 4.6,
+    "reviewCount": 890,
+    "deliveryTime": "15-25 min",
+    "minOrder": 10,
+    "deliveryFee": 1.49,
+    "image": "https://images2.alphacoders.com/129/thumb-1920-1294573.jpg",
+    "address": "7 Roast Lane, Midtown",
+    "menu": [
+      {
+        "category": "Coffee & Beverages",
+        "items": [
+          {
+            "id": 2801,
+            "name": "Classic Cappuccino",
+            "description": "Rich espresso with steamed milk foam.",
+            "price": 3.99,
+            "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2802,
+            "name": "Iced Caramel Latte",
+            "description": "Chilled coffee with caramel syrup.",
+            "price": 4.49,
+            "image": "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2803,
+            "name": "Mocha Frappe",
+            "description": "Blended coffee with chocolate flavor.",
+            "price": 4.99,
+            "image": "https://www.acouplecooks.com/wp-content/uploads/2022/02/Frappe-010.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2804,
+            "name": "Espresso Shot",
+            "description": "Strong single shot of espresso.",
+            "price": 2.49,
+            "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2805,
+            "name": "Vanilla Cold Brew",
+            "description": "Slow-brewed coffee with vanilla notes.",
+            "price": 4.29,
+            "image": "https://www.spendwithpennies.com/wp-content/uploads/2023/07/Vanilla-Sweet-Cream-Cold-Brew-SpendWithPennies-7.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Teas & Refreshers",
+        "items": [
+          {
+            "id": 2806,
+            "name": "Masala Chai",
+            "description": "Indian spiced tea with milk.",
+            "price": 2.99,
+            "image": "https://media.istockphoto.com/id/945169954/photo/indian-masala-chai-tea-spiced-tea-with-milk-on-dark-rusty-background.jpg?s=612x612&w=0&k=20&c=3i96KX6sVaTj1bekevWONfh08JmmkZTHLgW0hJCcTb0=",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2807,
+            "name": "Green Tea",
+            "description": "Light and refreshing antioxidant-rich tea.",
+            "price": 2.49,
+            "image": "https://tiimg.tistatic.com/fp/1/007/592/fine-quality-nutrients-rich-organic-pure-natural-herbal-green-tea-045.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2808,
+            "name": "Peach Iced Tea",
+            "description": "Chilled tea infused with peach flavor.",
+            "price": 3.49,
+            "image": "https://www.cubesnjuliennes.com/wp-content/uploads/2021/09/Peach-Iced-Tea-2.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Bakery & Cakes",
+        "items": [
+          {
+            "id": 2809,
+            "name": "Chocolate Brownie",
+            "description": "Fudgy chocolate brownie slice.",
+            "price": 3.49,
+            "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2810,
+            "name": "Blueberry Muffin",
+            "description": "Soft muffin loaded with blueberries.",
+            "price": 2.99,
+            "image": "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2811,
+            "name": "Red Velvet Cake Slice",
+            "description": "Classic red velvet with cream cheese frosting.",
+            "price": 4.49,
+            "image": "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2812,
+            "name": "Croissant",
+            "description": "Buttery and flaky French croissant.",
+            "price": 2.79,
+            "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Sandwiches & Snacks",
+        "items": [
+          {
+            "id": 2813,
+            "name": "Grilled Cheese Sandwich",
+            "description": "Toasted sandwich with melted cheese.",
+            "price": 4.99,
+            "image": "data:image/jpeg;base64,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",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2814,
+            "name": "Veg Club Sandwich",
+            "description": "Multi-layered sandwich with fresh veggies.",
+            "price": 5.49,
+            "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2815,
+            "name": "Paneer Wrap",
+            "description": "Spiced paneer wrapped in soft flatbread.",
+            "price": 5.99,
+            "image": "https://png.pngtree.com/background/20250531/original/pngtree-paneer-wrap-with-grilled-cubes-veggies-and-tikka-sauce-in-a-picture-image_16599389.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Desserts & Ice Creams",
+        "items": [
+          {
+            "id": 2816,
+            "name": "Vanilla Ice Cream",
+            "description": "Classic creamy vanilla scoop.",
+            "price": 2.99,
+            "image": "data:image/jpeg;base64,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",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2817,
+            "name": "Chocolate Sundae",
+            "description": "Chocolate ice cream with hot fudge sauce.",
+            "price": 3.99,
+            "image": "https://media.istockphoto.com/id/185271865/photo/brownie-sundae-with-cherry-on-top-and-side-cup-of-coffee.jpg?s=612x612&w=0&k=20&c=rmV3ycZbUAlaX13FpoPt2KByfTarCfO9eH6CPp4vtbk=",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2818,
+            "name": "Coffee Affogato",
+            "description": "Vanilla ice cream topped with hot espresso.",
+            "price": 4.49,
+            "image": "https://thumbs.dreamstime.com/b/affogato-vanilla-ice-cream-hot-espresso-333813981.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Sweet Crumb Bakery",
+    "cuisine": ["Cakes"],
+    "rating": 4.8,
+    "reviewCount": 1740,
+    "deliveryTime": "25-35 min",
+    "minOrder": 14,
+    "deliveryFee": 1.99,
+    "image": "https://images.squarespace-cdn.com/content/v1/5a86541ff9a61efff44f4c7f/1518761743297-UCFCNKR94FIPKGBREUR2/fullsizeoutput_1310.jpeg",
+    "address": "3 Sugar Street, Central",
+    "menu": [
+      {
+        "category": "Cakes & Desserts",
+        "items": [
+          {
+            "id": 2901,
+            "name": "Chocolate Truffle Cake",
+            "description": "Rich chocolate layers with ganache.",
+            "price": 18.99,
+            "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2902,
+            "name": "Red Velvet Cake",
+            "description": "Moist red velvet with cream cheese frosting.",
+            "price": 17.49,
+            "image": "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2903,
+            "name": "Blueberry Cheesecake",
+            "description": "Creamy cheesecake topped with blueberries.",
+            "price": 19.99,
+            "image": "https://media.istockphoto.com/id/955973020/photo/fresh-berry-cheesecake-food-photography-recipe-idea.jpg?s=612x612&w=0&k=20&c=nBBXrNFtrfyxyNN8utx9UCuA6BJymsVIp5cKt748P9k=",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2904,
+            "name": "Black Forest Cake",
+            "description": "Chocolate sponge with cherries and whipped cream.",
+            "price": 16.99,
+            "image": "https://images.unsplash.com/photo-1604413191066-4dd20bedf486?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2905,
+            "name": "Vanilla Bean Cake",
+            "description": "Classic vanilla cake with buttercream frosting.",
+            "price": 15.49,
+            "image": "https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=400&q=80",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2906,
+            "name": "Coffee Walnut Cake",
+            "description": "Coffee-flavored sponge with crunchy walnuts.",
+            "price": 16.49,
+            "image": "https://images.getrecipekit.com/20250520143332-coffee-20and-20walnut-20cake-20recipe-20uk.png?width=650&quality=90&",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Pastries & Bakes",
+        "items": [
+          {
+            "id": 2907,
+            "name": "Butter Croissant",
+            "description": "Flaky, buttery French-style croissant.",
+            "price": 2.99,
+            "image": "https://img.freepik.com/free-photo/close-up-photo-croissant-with-ham-cheese-butter-wooden-board-kitchen_613910-6448.jpg?semt=ais_hybrid&w=740&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2908,
+            "name": "Chocolate Éclair",
+            "description": "Choux pastry filled with cream and chocolate glaze.",
+            "price": 3.49,
+            "image": "https://ofbatteranddough.com/wp-content/uploads/2016/10/600-chocolate-eclairs-7.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2909,
+            "name": "Cinnamon Roll",
+            "description": "Soft roll with cinnamon sugar and icing.",
+            "price": 3.29,
+            "image": "https://t3.ftcdn.net/jpg/16/78/99/14/360_F_1678991417_ty1quG98tFOtRBJNcZao2jWSPKfJfHCE.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      },
+      {
+        "category": "Cookies & Brownies",
+        "items": [
+          {
+            "id": 2910,
+            "name": "Choco Chip Cookies",
+            "description": "Freshly baked cookies with chocolate chips.",
+            "price": 2.49,
+            "image": "https://images.stockcake.com/public/2/a/6/2a6022d3-30ed-4215-8000-c262cd61db0b_large/fresh-baked-cookies-stockcake.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2911,
+            "name": "Fudge Brownie",
+            "description": "Dense and fudgy chocolate brownie.",
+            "price": 3.99,
+            "image": "https://t4.ftcdn.net/jpg/14/67/67/69/360_F_1467676913_LIpbois178cfLswiD1bwCoHix1JsXoTB.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2912,
+            "name": "Oatmeal Raisin Cookie",
+            "description": "Chewy cookie with oats and raisins.",
+            "price": 2.29,
+            "image": "https://assets.bonappetit.com/photos/64cc0823ee399ec121b433b3/4:3/w_3560,h_2670,c_limit/20230726-1023-PANTRY-1523.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Ice Creams",
+        "items": [
+          {
+            "id": 2913,
+            "name": "Classic Vanilla Scoop",
+            "description": "Smooth and creamy vanilla ice cream.",
+            "price": 2.99,
+            "image": "https://media.istockphoto.com/id/1326143969/photo/bowl-with-vanilla-ice-cream-balls.jpg?s=612x612&w=0&k=20&c=WxEriNEK7yW7F4AWImLQRrpco-R_bdDYEQoyhigu9fc=",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 2914,
+            "name": "Belgian Chocolate Ice Cream",
+            "description": "Rich chocolate ice cream made with cocoa.",
+            "price": 3.49,
+            "image": "https://img.freepik.com/premium-photo/molten-choco-ice-cream-served-dish-isolated-wooden-background-side-view-dessert_198067-530228.jpg?semt=ais_hybrid&w=740&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 2915,
+            "name": "Strawberry Sundae",
+            "description": "Strawberry ice cream with fruit sauce.",
+            "price": 3.99,
+            "image": "https://media.istockphoto.com/id/946097778/photo/strawberry-ice-cream-shot-on-rustic-wooden-table.jpg?s=612x612&w=0&k=20&c=OMJv3fSh7QjJLBHi14F8BGl2tkXORRo0fj_7UOTQGHs=",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Frozen Bliss Creamery",
+    "cuisine": ["Ice-Cream"],
+    "rating": 4.7,
+    "reviewCount": 1320,
+    "deliveryTime": "20-30 min",
+    "minOrder": 12,
+    "deliveryFee": 1.99,
+    "image": "https://cdn.pixabay.com/photo/2021/01/18/13/02/ice-cream-5928080_1280.jpg",
+    "address": "41 Chill Avenue, West End",
+    "menu": [
+      {
+        "category": "Ice Creams",
+        "items": [
+          {
+            "id": 3001,
+            "name": "Belgian Chocolate Scoop",
+            "description": "Creamy dark chocolate ice cream.",
+            "price": 3.99,
+            "image": "https://img.freepik.com/free-photo/side-view-chocolate-ice-cream-with-nuts-wafer-rolls_140725-11439.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 3002,
+            "name": "Madagascar Vanilla",
+            "description": "Classic vanilla made from real beans.",
+            "price": 3.49,
+            "image": "https://media.istockphoto.com/id/1222202886/photo/vanilla-from-reunion.jpg?s=612x612&w=0&k=20&c=p_NtPQx8aCpw6Lpq3K8nSay_eE3vpPq_DYULLPlEO-s=",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 3003,
+            "name": "Strawberry Cheesecake",
+            "description": "Strawberry ice cream with cheesecake chunks.",
+            "price": 4.49,
+            "image": "https://static01.nyt.com/images/2025/08/12/multimedia/12FD-ICE-CREAMREX2-SL-Strawberry-Cheesecake-Ice-Cream-wvhm/12FD-ICE-CREAMREX2-SL-Strawberry-Cheesecake-Ice-Cream-wvhm-threeByTwoMediumAt2X.jpg",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 3004,
+            "name": "Mango Sorbet",
+            "description": "Refreshing dairy-free mango sorbet.",
+            "price": 3.99,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4IQ-ioVCHbLQn27GI89dimVtW6ljLQdd_ug&s",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 3005,
+            "name": "Cookies & Cream",
+            "description": "Vanilla ice cream loaded with chocolate cookie chunks.",
+            "price": 4.29,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcamUYNyUgs9a_AW02XepxJvYYyjAIvMGsw&s",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 3006,
+            "name": "Salted Caramel Swirl",
+            "description": "Caramel ice cream with a salted caramel ribbon.",
+            "price": 4.19,
+            "image": "https://iambaker.net/wp-content/uploads/2024/04/salted-caramel-icecream.jpg",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Sundaes",
+        "items": [
+          {
+            "id": 3007,
+            "name": "Hot Fudge Sundae",
+            "description": "Vanilla ice cream topped with hot chocolate fudge.",
+            "price": 5.49,
+            "image": "https://media.istockphoto.com/id/185271865/photo/brownie-sundae-with-cherry-on-top-and-side-cup-of-coffee.jpg?s=612x612&w=0&k=20&c=rmV3ycZbUAlaX13FpoPt2KByfTarCfO9eH6CPp4vtbk=",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 3008,
+            "name": "Brownie Blast Sundae",
+            "description": "Chocolate ice cream with brownie chunks and syrup.",
+            "price": 5.99,
+            "image": "https://media.istockphoto.com/id/157586474/photo/vanilla-ice-cream-and-walnut-brownie.jpg?s=612x612&w=0&k=20&c=lvGlpsdQm_ebB3SAVnGNwgpbtaC5-cAhrGC8wtGsVyQ=",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 3009,
+            "name": "Strawberry Delight Sundae",
+            "description": "Strawberry ice cream with fresh fruit sauce.",
+            "price": 5.29,
+            "image": "https://media.istockphoto.com/id/946097778/photo/strawberry-ice-cream-shot-on-rustic-wooden-table.jpg?s=612x612&w=0&k=20&c=OMJv3fSh7QjJLBHi14F8BGl2tkXORRo0fj_7UOTQGHs=",
+            "isVegetarian": true,
+            "bestseller": false
+          }
+        ]
+      },
+      {
+        "category": "Milkshakes",
+        "items": [
+          {
+            "id": 3010,
+            "name": "Chocolate Thick Shake",
+            "description": "Rich chocolate milkshake made with premium ice cream.",
+            "price": 4.99,
+            "image": "https://media.istockphoto.com/id/1291175021/photo/chocolate-milkshake.jpg?s=612x612&w=0&k=20&c=LkPVfYUcIdM85m9FI6QrAjXyzvOxrdhBEkmcPmlbTYw=",
+            "isVegetarian": true,
+            "bestseller": true
+          },
+          {
+            "id": 3011,
+            "name": "Vanilla Classic Shake",
+            "description": "Smooth vanilla milkshake topped with cream.",
+            "price": 4.49,
+            "image": "https://media.istockphoto.com/id/477470798/photo/ice-cream-milkshake-with-cookie-and-crumbs.jpg?s=612x612&w=0&k=20&c=lIXytK6VEhW6ObuwXrrftrcK3UHTWGesxkSa087E7Yc=",
+            "isVegetarian": true,
+            "bestseller": false
+          },
+          {
+            "id": 3012,
+            "name": "Strawberry Milkshake",
+            "description": "Creamy strawberry shake with real fruit.",
+            "price": 4.79,
+            "image": "https://img.freepik.com/free-photo/strawberry-milk-shake-table_140725-5487.jpg?semt=ais_user_personalization&w=740&q=80",
+            "isVegetarian": true,
+            "bestseller": true
+          }
+        ]
+      }
+    ]
+  }
+]

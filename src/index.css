@@ -1,0 +1,1554 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+/* LIGHT MODE (Default) */
+:root {
+  --bg-body: #fff5ee;
+  --bg-card: #ffffff;
+  --text-main: #3d4152;
+  --text-muted: #686b78;
+  --border-color: #f0f0f0;
+  --primary-orange: #fc8019;
+}
+
+/* DARK MODE (Triggered by JavaScript) */
+[data-theme='dark'] {
+  --bg-body: #121212;
+  --bg-card: #1e1e1e;
+  --text-main: #e0e0e0;
+  --text-muted: #a0a0a0;
+  --border-color: #333333;
+}
+
+/* APPLY TO BODY */
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Theme Toggle Button Style */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--primary-orange);
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--soft-orange);
+}
+
+/* -----------------------------------Navbar--------------------------------- */
+/* Navbar Base Styles */
+.navbar {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-color);
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo Design */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fc8019; /* Match the footer brand color */
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-item {
+  color: #3d4152;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border: none;
+  transition: color 0.2s;
+}
+
+.nav-item:hover {
+  color: #fc8019;
+}
+
+/* Shopping Cart Badge */
+.nav-item {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -18px;
+  right: -10px;
+  background-color: #fc8019;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* Authentication Button */
+.auth-btn {
+  background-color: #3d4152;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.auth-btn:hover {
+  background-color: #282c3f;
+}
+
+/* Responsive Tablet/Mobile */
+@media (max-width: 768px) {
+  .logo span {
+    display: none; /* Hide text, keep icon on small screens */
+  }
+  
+  .nav-links {
+    gap: 15px;
+  }
+}
+
+.logout-btn:hover {
+  color: #ff4d4d; /* Red highlight for logout */
+}
+
+.section-title {
+  color: var(--text-main);
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 40px;
+}
+
+/* --------------------------------------Your Cart----------------------- */
+/* Layout Wrapper */
+.cart-page {
+  padding: 40px 20px;
+  min-height: 80vh;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px; /* Main list and sidebar summary */
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Individual Cart Items */
+.cart-items {
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  padding: 10px 25px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: opacity 0.3s ease;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.cart-item-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.restaurant-link {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.restaurant-link:hover {
+  text-decoration: underline;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--bg-body);
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.quantity-controls span {
+  font-weight: 800;
+  min-width: 20px;
+  text-align: center;
+  color: var(--text-main);
+}
+
+.q-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--primary-orange);
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.q-btn:hover {
+  background: var(--primary-orange);
+  color: white;
+  border-color: var(--primary-orange);
+}
+
+.remove-btn {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+}
+
+.remove-btn:hover {
+  text-decoration: underline;
+}
+
+/* Order Summary Card */
+.summary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 30px;
+  position: sticky;
+  top: 100px; /* Sticks below the navbar */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card h3 {
+  margin: 0;
+  color: var(--text-main);
+  font-size: 1.3rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.summary-row span:last-child {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Checkout Button */
+.checkout-btn {
+  width: 100%;
+  background: #1a1a2e; /* Matching the dark 'ADD' button from detail page */
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+.checkout-btn:active {
+  transform: translateY(0);
+}
+
+/* Dark Mode Overrides */
+[data-theme='dark'] .summary-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme='dark'] .checkout-btn {
+  background: var(--primary-orange); /* More visibility in dark mode */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .summary-card {
+    position: static;
+  }
+}
+/* ---------------------------------------Your Orders------------------------------- */
+/* Order History Page */
+.orders-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.order-card {
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Header within Card */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 15px;
+}
+
+.order-id {
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.order-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 4px 0 0;
+}
+
+/* Status & Pricing */
+.status-delivered {
+  color: #48c479; /* Vibrant Green */
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.order-total-price {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin: 5px 0 0;
+}
+
+/* Items Breakdown */
+.order-items-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.order-item-row span:last-child {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* Empty State Styling */
+.empty-orders {
+  text-align: center;
+  padding: 100px 0;
+  color: var(--text-muted);
+}
+
+.empty-orders svg {
+  color: var(--border-color);
+  margin-bottom: 20px;
+}
+
+/* Dark Mode Specific Adjustments */
+[data-theme='dark'] .order-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+/* Banner */
+.banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&h=400&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Category Carousel */
+.carousel-section {
+  padding: 40px 0;
+}
+
+.carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.category-card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.category-img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 4px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.category-card:hover .category-img {
+  border-color: var(--primary);
+}
+
+/* Home Layout */
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  background: #eee;
+  white-space: nowrap;
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.restaurant-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+.res-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.res-info {
+  padding: 15px;
+}
+
+.res-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.res-rating {
+  background: #48c479;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.res-details {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-grey);
+  font-size: 0.9rem;
+}
+
+/* ---------------------------------Login----------------------------- */
+/* Container with a subtle background hint */
+/* ===============================
+   PAGE LAYOUT
+================================ */
+.login-page {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Orange Theme Background */
+.login-page.orange-theme {
+  background: linear-gradient(135deg, #ff9a44 0%, #fc8019 100%) !important;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* ===============================
+   GLASS CARD (BASE)
+================================ */
+.glass-card {
+  width: 100%;
+  padding: 40px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Login width */
+.glass-card.login-form {
+  max-width: 400px;
+}
+
+/* Register width (proportional & wider) */
+.glass-card.register-form {
+  max-width: 480px;
+}
+
+/* ===============================
+   TRUE TRANSPARENT GLASS EFFECT
+================================ */
+.glass-card.transparent-form {
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.25),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+
+  z-index: 5;
+}
+
+/* ===============================
+   HEADINGS & TEXT
+================================ */
+.glass-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  position: relative;
+  z-index: 6;
+}
+
+/* ===============================
+   FORM GROUPS
+================================ */
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 6;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Inputs float above emojis */
+.transparent-form .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.transparent-form .form-group input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 0 4px rgba(252, 128, 25, 0.2);
+}
+
+/* ===============================
+   PASSWORD HINT
+================================ */
+.password-hint {
+  font-size: 0.85rem;
+  margin-top: -8px;
+  margin-bottom: 14px;
+  color: #ffffff;
+  opacity: 0.9;
+  position: relative;
+  z-index: 6;
+}
+
+/* ===============================
+   SUBMIT BUTTON
+================================ */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 6;
+}
+
+.submit-btn:hover {
+  background: #111123;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* ===============================
+   ERROR MESSAGE
+================================ */
+.error-msg {
+  background: rgba(255, 0, 0, 0.12);
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  position: relative;
+  z-index: 6;
+}
+
+/* ===============================
+   TOGGLE LINK
+================================ */
+.toggle-text {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  position: relative;
+  z-index: 6;
+}
+
+.toggle-text span {
+  color: #1a1a2e;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+/* ===============================
+   FLOATING EMOJIS
+================================ */
+.emoji-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-emoji {
+  position: absolute;
+  font-size: 2.5rem;
+  opacity: 0.9;
+  animation: floatAround 20s infinite linear;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+  user-select: none;
+}
+
+/* Emoji Positions */
+.e1 { top: 10%; left: 10%; animation-duration: 15s; }
+.e2 { top: 20%; left: 80%; animation-duration: 18s; }
+.e3 { top: 70%; left: 15%; animation-duration: 12s; }
+.e4 { top: 85%; left: 75%; animation-duration: 22s; }
+.e5 { top: 40%; left: 5%;  animation-duration: 25s; }
+.e6 { top: 5%;  left: 50%; animation-duration: 20s; }
+.e7 { top: 50%; left: 90%; animation-duration: 17s; }
+.e8 { top: 30%; left: 30%; animation-duration: 14s; }
+.e9 { top: 60%; left: 60%; animation-duration: 19s; }
+.e10 { top: 15%; left: 40%; animation-duration: 21s; }
+
+/* Floating Animation */
+@keyframes floatAround {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(30px, -50px) rotate(120deg); }
+  66% { transform: translate(-20px, 20px) rotate(240deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .glass-card.login-form,
+  .glass-card.register-form {
+    max-width: 100%;
+    padding: 32px;
+  }
+
+  .floating-emoji {
+    font-size: 2rem;
+  }
+}
+/* ------------------------------------carousel------------------------------------------ */
+.carousel {
+  position: sticky;
+  top: 70px;          
+  z-index: 900;             
+  display: flex;
+  gap: 12px;
+  padding: 14px 0;
+  overflow-x: auto;
+  background-color: var(--bg-card); /* prevent transparency */
+  border-bottom: 1px solid var(--bg-card);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual Category Chip */
+.chip {
+  white-space: nowrap; /* Prevents text from wrapping */
+  padding: 10px 24px;
+  border-radius: 50px; /* Pill shape */
+  border: 1px solid #e2e2e7;
+  background-color: #ffffff;
+  color: #3d4152;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* Hover Effect */
+.chip:hover {
+  border-color: #fc8019;
+  color: #fc8019;
+  background-color: #fff5ee;
+}
+
+/* Active State */
+.chip.active {
+  background-color: #fc8019; /* Your brand orange */
+  color: #ffffff;
+  border-color: #fc8019;
+  box-shadow: 0 4px 12px rgba(252, 128, 25, 0.3);
+  transform: scale(1.05);
+}
+
+/* Active State on Hover */
+.chip.active:hover {
+  background-color: #e67316;
+}
+/* --------------------------------Restaurant Card-------------------------------- */
+/* Card Container */
+.restaurant-card {
+  display: block;
+  text-decoration: none;
+  background: var(--bg-card);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+  height: 100%;
+}
+
+/* Hover Interaction */
+.restaurant-card:hover {
+  box-shadow: 0 10px 25px rgba(252, 128, 25, 0.15); /* Orange tinted shadow */
+  transform: translateY(-5px);
+}
+
+.meta span:first-child {
+  background-color: #48c479; /* Keep green for 'Go', or use #fc8019 for 'Brand' */
+  border-radius: 6px;
+}
+
+/* Image Container & Zoom Effect */
+.restaurant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.restaurant-card:hover img {
+  transform: scale(1.1); /* Subtle zoom on hover */
+}
+
+/* Card Body Content */
+.card-body {
+  padding: 16px;
+}
+
+.card-body h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.15rem;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+/* Muted Text Styling */
+.muted {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin: 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Keeps long cuisine lists tidy */
+}
+
+/* Meta Info (Rating & Time) */
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 12px 0;
+  padding-top: 10px;
+  border-top: 1px solid #f3f3f3;
+}
+
+.meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #3e4152;
+}
+
+/* Rating specific color - Green for high ratings */
+.meta span:first-child {
+  background-color: #48c479; /* Success Green */
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Delivery Time specific icon color */
+.meta span:last-child svg {
+  color: #fc8019;
+}
+
+
+.restaurant-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.chip {
+  background-color: #ffffff;
+  border: 1px solid #ffd8b8; /* Light orange border */
+}
+
+.chip.active {
+  background: var(--primary-orange);
+  border-color: var(--primary-orange);
+  box-shadow: 0 5px 15px rgba(252, 128, 25, 0.4);
+}
+
+@keyframes pulse-orange {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.cart-count {
+  background-color: var(--primary-orange);
+  animation: pulse-orange 0.5s ease-in-out;
+}
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+[data-theme='dark'] .restaurant-card img {
+  filter: brightness(0.8) contrast(1.1);
+}
+
+/* --------------------------------------Restaurant Details-------------------------------------- */
+.restaurant-detail-wrapper {
+  background-color: var(--bg-body);
+  min-height: 100vh;
+}
+
+/* Banner */
+.hero-banner {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.floating-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.floating-back:hover{
+  background: orange;
+}
+
+/* Info Card */
+.content-lift {
+  margin-top: -60px;
+  position: relative;
+  z-index: 5;
+}
+
+.restaurant-info-card {
+  background: var(--bg-card);
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border: 1px solid var(--border-color);
+}
+
+.tag {
+  background: #fff5ee;
+  color: var(--primary-orange);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.stats-bar {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 10px;
+  align-items: center;
+}
+
+.stats-bar span { display: flex; align-items: center; gap: 5px; }
+.icon-orange { color: #ffcc00; }
+
+.delivery-info {
+  background: #f8f9fa;
+  display: flex;
+  padding: 15px 25px;
+  border-radius: 12px;
+  align-items: center;
+  gap: 20px;
+}
+
+[data-theme='dark'] .delivery-info { background: #2a2a2a; }
+
+.stat-box { text-align: center; }
+.stat-box .label { font-size: 9px; color: #999; margin: 0; }
+.stat-box .value { font-size: 16px; font-weight: 800; margin: 0; color: var(--text-main); }
+.border-left { border-left: 1px solid #ddd; padding-left: 20px; }
+
+/* Menu Layout */
+.menu-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+/* Sidebar */
+.sidebar-title { font-size: 12px; font-weight: 800; color: #999; margin-bottom: 20px; }
+.sidebar-link {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 12px 15px;
+  border: none;
+  background: none;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.sidebar-link.active {
+  background: var(--primary-orange);
+  color: white;
+}
+
+/* Grid */
+.category-heading {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.food-item-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.item-details { flex: 1; }
+.item-details h3 { font-size: 14px; margin: 0; color: var(--text-main); }
+.description { font-size: 12px; color: var(--text-muted); margin: 8px 0; }
+.price-row { display: flex; justify-content: space-between; align-items: center; margin-top: 15px; }
+.price { font-weight: 800; font-size: 16px; }
+
+.add-btn-dark {
+  background: #000000;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.item-image-wrapper img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===============================
+   RESPONSIVE FIX (IMPORTANT)
+   =============================== */
+
+@media (max-width: 900px) {
+
+  /* Stack layout */
+  .menu-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  /* Sidebar becomes horizontal bar */
+  .category-sidebar {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--bg-body);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .sidebar-title {
+    display: none; /* Cleaner mobile UI */
+  }
+
+  /* Horizontal scrolling categories */
+  .category-scroll {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 0 10px;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .category-scroll::-webkit-scrollbar {
+    display: none; /* Chrome */
+  }
+
+  .sidebar-link {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 10px 16px;
+    border-radius: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+  }
+
+  .sidebar-link.active {
+    background: var(--primary-orange);
+    color: #fff;
+    border-color: var(--primary-orange);
+  }
+
+  /* Food items remain visible */
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Diet Indicator Square */
+.diet-indicator {
+  width: 14px;
+  height: 14px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  background: transparent;
+}
+
+/* Green for Veg */
+.diet-indicator.veg {
+  border-color: #48c479;
+}
+
+/* Red for Non-Veg */
+.diet-indicator.non-veg {
+  border-color: #e43b4f;
+}
+
+/* The Circle inside */
+.diet-indicator .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.diet-indicator.veg .dot {
+  background: #48c479;
+}
+
+.diet-indicator.non-veg .dot {
+  background: #e43b4f;
+}
+
+/* Optional: Slight glow for dark mode */
+[data-theme='dark'] .diet-indicator.veg {
+  box-shadow: 0 0 5px rgba(72, 196, 121, 0.2);
+}
+
+/* -------------------------Footer Container------------------------------------ */
+/* ===============================
+   FOOTER BASE
+================================ */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 0 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===============================
+   MAIN LAYOUT
+================================ */
+.footer-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.2fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* ===============================
+   BRAND
+================================ */
+.footer-brand {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo-box {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fc8019;
+  cursor: pointer;
+}
+
+/* ===============================
+   LINK GRID
+================================ */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-column h3 {
+  color: #fc8019;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 12px;
+  color: #b3b3b3;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-column li:hover {
+  color: #ffffff;
+}
+
+/* ===============================
+   ACTIONS
+================================ */
+.footer-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.find-store {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.find-store a {
+  color: #fc8019;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.find-store a:hover {
+  text-decoration: underline;
+}
+
+.app-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.app-btn {
+  width: 140px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.app-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   FOOTER BOTTOM
+================================ */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-links img {
+  width: 36px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: translateY(-4px);
+}
+
+/* ===============================
+   TABLET (≤1024px)
+================================ */
+@media (max-width: 1024px) {
+  .footer-main {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .footer-actions {
+    grid-column: span 2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .app-badges {
+    flex-direction: row;
+  }
+}
+
+/* ===============================
+   MOBILE (≤768px)
+================================ */
+@media (max-width: 768px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-brand {
+    justify-content: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE (≤480px)
+================================ */
+@media (max-width: 480px) {
+  .logo-box {
+    font-size: 1.5rem;
+  }
+
+  .app-btn {
+    width: 120px;
+  }
+
+  .social-links img {
+    width: 32px;
+  }
+}
+
+/* ------------------Error Page------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.error-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+  color: #ff4c60;
+}
+
+.error-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.error-text {
+  font-size: 1rem;
+  opacity: 0.85;
+  max-width: 400px;
+  margin-bottom: 25px;
+}
+
+.error-btn {
+  text-decoration: none;
+  padding: 12px 28px;
+  background-color: #ff4c60;
+  color: white;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.error-btn:hover {
+  background-color: #ff2f4a;
+  transform: translateY(-2px);
+}
