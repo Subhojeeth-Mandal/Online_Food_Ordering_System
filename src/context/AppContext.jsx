@@ -57,17 +57,17 @@ export const AppProvider = ({ children }) => {
   };
 
   const addToCart = (item, restaurantName) => {
-    setCart((prev) => {
-      const existing = prev.find((i) => i.id === item.id);
+    setCart((cart) => {
+      const existing = cart.find((i) => i.id === item.id);
       if (existing) {
-        return prev.map((i) =>i.id === item.id ? { ...i, qty: i.qty + 1 } : i);
+        return cart.map((i) =>i.id === item.id ? { ...i, qty: i.qty + 1 } : i);
       }
-      return [...prev, { ...item, qty: 1, restaurantName }];
+      return [...cart, { ...item, qty: 1, restaurantName }];
     });
   };
 
   const updateQty = (id, delta) => {
-    setCart((prev) =>prev.map((i) => (i.id === id ? { ...i, qty: i.qty + delta } : i)).filter((i) => i.qty > 0));
+    setCart((cart) =>cart.map((item) => (item.id === id ? { ...item, qty: item.qty + delta } : item)).filter((item) => item.qty > 0));
   };
 
   const placeOrder = () => {

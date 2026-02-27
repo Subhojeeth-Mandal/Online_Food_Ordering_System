@@ -60,7 +60,7 @@ const Cart = () => {
               </div>
 
               <div className="quantity-controls">
-                <button className="q-btn" onClick={() => updateQty(item.id, -1)}>
+                <button className="q-btn" onClick={() => updateQty(item.id, -1)} disabled={item.qty === 1}>
                   <Minus size={14} />
                 </button>
                 <span>{item.qty}</span>
