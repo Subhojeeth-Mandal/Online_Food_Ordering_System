@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 
-const API_URL = 'https://quickeats-json-server.onrender.com';
+const API_URL = 'http://localhost:3000/users';
 
 const validatePassword = (password) => {
   if (password.length < 8) {
