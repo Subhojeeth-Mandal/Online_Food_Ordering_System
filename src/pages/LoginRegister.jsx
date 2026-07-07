@@ -28,7 +28,7 @@ const validatePassword = (password) => {
 
 const LoginRegister = () => {
   const [isLogin, setIsLogin] = useState(true);
-  const [formData, setFormData] = useState({name: '',email: '',password: '',confirmPassword: ''});
+  const [formData, setFormData] = useState({ name: '', email: '', password: '', confirmPassword: '' });
   const [error, setError] = useState('');
   const { login } = useApp();
   const navigate = useNavigate();
@@ -36,13 +36,29 @@ const LoginRegister = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
+
+    // Sanity check: catch a missing env var immediately instead of silently hitting the wrong URL
+    if (!import.meta.env.VITE_API_URL) {
+      console.error('VITE_API_URL is undefined. Check your .env file and restart the dev server.');
+      setError('Server configuration error. Please contact support.');
+      return;
+    }
+
     try {
       if (isLogin) {
-        const res = await axios.get(`${API_URL}?email:eq=${formData.email}&password:eq=${formData.password}`);
+        const res = await axios.get(API_URL, {
+          params: {
+            email: formData.email,
+            password: formData.password,
+          },
+        });
+
         console.log('Login response:', res.data);
-        if (res.data.length > 0) {
-          localStorage.setItem('food_user', JSON.stringify(res.data[0]));
-          login(res.data[0]);
+
+        if (Array.isArray(res.data) && res.data.length > 0) {
+          const user = res.data[0]; // full matched user record from json-server
+          localStorage.setItem('food_user', JSON.stringify(user));
+          login(user);
           navigate(-1);
         } else {
           setError('Invalid email or password');
@@ -58,26 +74,31 @@ const LoginRegister = () => {
           return;
         }
 
-        const checkRes = await axios.get(`${API_URL}?email:eq=${formData.email}`);
-        if (checkRes.data.length > 0) {
+        const checkRes = await axios.get(API_URL, {
+          params: { email: formData.email },
+        });
+
+        if (Array.isArray(checkRes.data) && checkRes.data.length > 0) {
           setError('Email already exists');
           return;
         }
 
-        const res = await axios.post(API_URL, formData);
-        
-        login(res.data);
+        const { confirmPassword, ...userToCreate } = formData; // don't store confirmPassword in db
+        const res = await axios.post(API_URL, userToCreate, {
+          headers: { 'Content-Type': 'application/json' },
+        });
+
         console.log('User registered:', res.data);
+        localStorage.setItem('food_user', JSON.stringify(res.data));
+        login(res.data);
         navigate('/');
       }
     } catch (err) {
-      console.error(err);
+      console.error('Auth error:', err);
       setError('Connection to auth server failed. Make sure json-server is running.');
     }
   };
-  
-  console.log(formData);
-  
+
   return (
     <div className="login-page orange-theme">
       <div className="emoji-bg">
@@ -90,8 +111,7 @@ const LoginRegister = () => {
         )}
       </div>
 
-      <div
-        className={`glass-card transparent-form ${isLogin ? 'login-form' : 'register-form'}`}>
+      <div className={`glass-card transparent-form ${isLogin ? 'login-form' : 'register-form'}`}>
         <h2>{isLogin ? 'Welcome Back' : 'Create Account'}</h2>
 
         {error && <div className="error-msg">{error}</div>}
@@ -100,28 +120,48 @@ const LoginRegister = () => {
           {!isLogin && (
             <div className="form-group">
               <label>Full Name</label>
-              <input type="text" placeholder="John Doe" required value={formData.name}
-                onChange={(e) =>setFormData({ ...formData, name: e.target.value})}/>
+              <input
+                type="text"
+                placeholder="John Doe"
+                required
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              />
             </div>
           )}
 
           <div className="form-group">
             <label>Email Address</label>
-            <input type="email" placeholder="email@address.com" required value={formData.email}
-              onChange={(e) =>setFormData({ ...formData, email: e.target.value})}/>
+            <input
+              type="email"
+              placeholder="email@address.com"
+              required
+              value={formData.email}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+            />
           </div>
 
           <div className="form-group">
             <label>Password</label>
-            <input type="password" placeholder="••••••••" required value={formData.password}
-              onChange={(e) =>setFormData({ ...formData, password: e.target.value})}/>
+            <input
+              type="password"
+              placeholder="••••••••"
+              required
+              value={formData.password}
+              onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+            />
           </div>
 
           {!isLogin && (
             <div className="form-group">
               <label>Confirm Password</label>
-              <input type="password" placeholder="••••••••" required value={formData.confirmPassword}
-                onChange={(e) =>setFormData({...formData,confirmPassword: e.target.value})}/>
+              <input
+                type="password"
+                placeholder="••••••••"
+                required
+                value={formData.confirmPassword}
+                onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
+              />
             </div>
           )}
 
@@ -138,9 +178,7 @@ const LoginRegister = () => {
 
         <p className="toggle-text">
           {isLogin ? "Don't have an account? " : 'Already have an account? '}
-          <span onClick={() => setIsLogin(!isLogin)}>
-            {isLogin ? 'Sign Up' : 'Login'}
-          </span>
+          <span onClick={() => setIsLogin(!isLogin)}>{isLogin ? 'Sign Up' : 'Login'}</span>
         </p>
       </div>
     </div>

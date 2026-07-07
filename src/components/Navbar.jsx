@@ -11,7 +11,7 @@ const Navbar = () => {
     logout();
     navigate('/');
   };
-
+console.log(user);
   return (
     <nav className="navbar">
       <div className="container nav-container">
