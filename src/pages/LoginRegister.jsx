@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 
-const API_URL = 'http://localhost:3000/users';
+const API_URL = `${import.meta.env.VITE_API_URL}/users`;
 
 const validatePassword = (password) => {
   if (password.length < 8) {
@@ -38,8 +38,10 @@ const LoginRegister = () => {
     setError('');
     try {
       if (isLogin) {
-        const res = await axios.get(`${API_URL}?email=${formData.email}&password=${formData.password}`);
+        const res = await axios.get(`${API_URL}?email:eq=${formData.email}&password:eq=${formData.password}`);
+        console.log('Login response:', res.data);
         if (res.data.length > 0) {
+          localStorage.setItem('food_user', JSON.stringify(res.data[0]));
           login(res.data[0]);
           navigate(-1);
         } else {
@@ -56,14 +58,16 @@ const LoginRegister = () => {
           return;
         }
 
-        const checkRes = await axios.get(`${API_URL}?email=${formData.email}`);
+        const checkRes = await axios.get(`${API_URL}?email:eq=${formData.email}`);
         if (checkRes.data.length > 0) {
           setError('Email already exists');
           return;
         }
 
         const res = await axios.post(API_URL, formData);
+        
         login(res.data);
+        console.log('User registered:', res.data);
         navigate('/');
       }
     } catch (err) {
@@ -71,7 +75,9 @@ const LoginRegister = () => {
       setError('Connection to auth server failed. Make sure json-server is running.');
     }
   };
-
+  
+  console.log(formData);
+  
   return (
     <div className="login-page orange-theme">
       <div className="emoji-bg">

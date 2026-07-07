@@ -27,7 +27,7 @@ const Navbar = () => {
           {user ? (
             <div className="nav-links">
               <span className="nav-item" style={{display: 'flex', alignItems: 'center', gap: '5px'}}>
-                <User size={18} /> {user.name.split(' ')[0]}
+                <User size={18} /> {user?.name?.split(' ')[0] || 'User'}
               </span>
               <button onClick={handleLogout} className="nav-item logout-btn">
                 <LogOut size={20} />
